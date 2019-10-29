@@ -1,0 +1,19 @@
+
+
+header {
+    background-color: yellow;
+    background-image: url(bilder/BierBild.PNG);
+    height: 200px;
+}
+
+header p {
+    background-color: orange;
+    text-align: right;
+    padding-right: 30px;
+}
+
+#logotext {
+    padding-top: 50px;
+    font-size: 40pt;
+    color: white;
+}
