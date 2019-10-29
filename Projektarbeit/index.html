@@ -1,12 +1,42 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Projektarbeit</title>
-  </head>
-  <body>
-<div>
 
-  <</div>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Projektarbeit</title>
+</head>
+
+<body>
+
+  <b> Sie sind: </b>
+  <input type="radio" name="geschlecht" value="Männlich"> Männlich
+  <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
+
+  <p>
+  </p>
+
+
+  <div class="seekbar">
+    <b> Ihre Körpergröße (in cm): </b>
+    <input type="range" min="140" max="220" value="140" class="seekbar" id="hoehe" name="hoehe" oninput="x1.value=parseInt(height1.value)">
+    <output name="x1" for="hoehe">140</output>
+    <label> Zentimeter</label>
+  </div>
+
+  <div class="seekbar">
+    <b> Ihr Gewicht (kg): </b>
+    <input type="range" min="30" max="150" value="30" class="seekbar" id="gewicht" name="gewicht" oninput="x2.value=parseInt(gewicht.value)">
+    <output name="x2" for="gewicht">30</output>
+    <label> Kilogramm</label>
+  </div>
+
+  <p>
+  </p>
+  <br>
+</br>
+
+  <button type="besteatigen" class="button">Berechne den Promillewert</button>
+
+</body>
+
 </html>
