@@ -18,66 +18,68 @@
   </header>
 
   <main>
-    <div class="container">
-      <div class="title">Bier:
-      <img src="bilder/BierBild.PNG" alt="Bier " /> </div>
-      <div class="title">Wein:
-      <img src="bilder/WeinBild.PNG" alt="Bier " />  </div>
-      <div class="title">Likör:
-      <img src="bilder/LikoerBild.PNG" alt="Bier " /> </div>
-      <div class="title">Schnaps:
-      <img src="bilder/SchnapsBild.PNG" alt="Bier " /> </div>
-      <div class="title">Wodka:
-      <img src="bilder/WodkaBild.PNG" alt="Bier " /> </div>
-      <div class="title">Whisky:
-      <img src="bilder/WhiskyBild.PNG" alt="Bier " /> </div>
+
+    <div class="radioBt">
+      <b> Sie sind: </b>
+      <input type="radio" name="geschlecht" value="Männlich"> Männlich
+      <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
     </div>
+
+
+
+
   </main>
 
-  <b> Sie sind: </b>
-  <input type="radio" name="geschlecht" value="Männlich"> Männlich
-  <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
-
-  <p>
-  </p>
-
-
   <div class="seekbar">
+    <br>
+
     <b> Ihre Körpergröße (in cm): </b>
     <input type="range" min="140" max="220" value="140" class="seekbar" id="hoehe" name="hoehe" oninput="x1.value=parseInt(height1.value)">
     <output name="x1" for="hoehe">140</output>
     <label> Zentimeter</label>
+    </br>
   </div>
 
   <div class="seekbar">
+
+
     <b> Ihr Gewicht (kg): </b>
     <input type="range" min="30" max="150" value="30" class="seekbar" id="gewicht" name="gewicht" oninput="x2.value=parseInt(gewicht.value)">
     <output name="x2" for="gewicht">30</output>
     <label> Kilogramm</label>
+
   </div>
 
-  <p>
-  </p>
   <br>
   </br>
-
-
   <aside>
 
 
     <section>
 
       <nav>
-  <li>    <a href="index.html">Eingabe</a> </li>
+        <div class="container">
 
+          <div class="title">Bier:
+            <img src="bilder/BierBild.PNG" alt="Bier " /> </div>
+          <div class="title">Wein:
+            <img src="bilder/WeinBild.PNG" alt="Bier " /> </div>
+          <div class="title">Likör:
+            <img src="bilder/LikoerBild.PNG" alt="Bier " /> </div>
+          <div class="title">Schnaps:
+            <img src="bilder/SchnapsBild.PNG" alt="Bier " /> </div>
+          <div class="title">Wodka:
+            <img src="bilder/WodkaBild.PNG" alt="Bier " /> </div>
+          <div class="title">Whisky:
+            <img src="bilder/WhiskyBild.PNG" alt="Bier " /> </div>
 
+        </div>
 
-      <li>  <a href="getraenke.html">Getränke</a> </li>
       </nav>
     </section>
 
   </aside>
-  <h2>Getränke</h2>
+
 
   <!-- <div class='form-group'> <label>Getränk: <select name='drink1' size='1'><option selected value='999'><option value='1'>kleines Glas Bier (0.2 l)
   </option><option value='2'>Glas Bier (0.33 l)
@@ -98,7 +100,7 @@
   </option><option value='17'>kleiner Whisky (0.02 l)
   </option><option value='18'>grosser Whisky (0.04 l)
   </option><option value='19'>halbe Flasche Whisky (0.35 l)</option></label></select><p><label>Anzahl: <select name='drinknummer1' size='1'  style='width: 200px'><option selected value='0'><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option></label></select></div><div -->
-
+  <br>
   <button type="getraenk" class="button">Glas Bier (0.33 l)</button>
   <button type="getraenk" class="button">grosses Glas Bier (0.5 l)</button>
   <button type="getraenk" class="button">Piccolo Wein (0.2 l)</button>
@@ -117,10 +119,12 @@
   <button type="getraenk" class="button">kleiner Whisky (0.02 l)</button>
   <button type="getraenk" class="button">grosser Whisky (0.04 l)</button>
   <button type="getraenk" class="button">halbe Flasche Whisky (0.35 l)</button>
+  </br>
   <p>
   </p>
   <p>
   </p>
+
 
   <button type="getraenkEinfügen" class="button">Noch ein Getränk eingeben</button>
 
