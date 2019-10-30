@@ -1,19 +1,41 @@
-
-
 header {
-    background-color: yellow;
-    background-image: url(bilder/Bier.PNG);
-    height: 500px;
+  background-color: yellow;
+  background-image: url(bilder/Bier.PNG);
+  height: 500px;
 }
 
 header p {
-    background-color: orange;
-    text-align: right;
-    padding-right: 30px;
+  background-color: orange;
+  text-align: right;
+  padding-right: 30px;
 }
 
 #logotext {
-    padding-top: 50px;
-    font-size: 40pt;
-    color: white;
+  padding-top: 50px;
+  font-size: 40pt;
+  color: white;
 }
+
+main {
+  /* Den Container nach rechts schieben */
+  display: flex;
+  justify-content: left;
+}
+
+.container {
+  /* Breite 60em oder kleiner */
+  max-width: 60em;
+  background-color: orange;
+  /* Damit die Bilder im Container auch rechts stehen */
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+.title {
+  display: inline-block;
+  width: 5em;
+  height: 1.2em;
+  margin: 0.5em;
+  border: 1px solid black;
+  background-color: white;
