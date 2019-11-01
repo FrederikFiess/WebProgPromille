@@ -6,8 +6,11 @@ a:active {text-decoration: underline; background-color: #EFEFEF;}
 
 #logo {text-align: center;font-size: 500%;color: #FFFFFF; font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
 
-#text {margin-top: 500px;text-align: center;font-size: 300%; letter-spacing: 2px; color: #FFFFFF;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
-#navigation {font-size: 300%; text-align: center;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
+#text {margin-top: 350px;text-align: center;font-size: 300%; letter-spacing: 2px; color: #FFFFFF;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
+#text2 {margin-top: 50px;text-align: center;font-size: 100%; letter-spacing: 2px; color: #FFFFFF;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
+
+#navigation {margin-top: 20px;font-size: 300%; text-align: center;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
+#buttonStart {margin-top: 50px; text-align: center;}
 
 body { background-image:url(alkohol.jpg); }
 
@@ -21,11 +24,6 @@ button:hover {
 }
 
 .button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-
   width: 500px;
   height: 100px;
   align-items: center;
