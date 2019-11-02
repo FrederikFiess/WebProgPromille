@@ -32,32 +32,23 @@
 
   <div class="seekbar">
     <br>
-
     <b> Ihre Körpergröße (in cm): </b>
-    <input type="range" min="140" max="220" value="140" class="seekbar" id="hoehe" name="hoehe" oninput="x1.value=parseInt(height1.value)">
-    <output name="x1" for="hoehe">140</output>
+    <input type="range" id="hoehe" min="140" max="220" value="140" name="hoehe">
+    <span id="laufe"> </span>
     <label> Zentimeter</label>
     </br>
   </div>
 
   <div class="seekbar">
-
-
     <b> Ihr Gewicht (kg): </b>
-    <input type="range" min="30" max="150" value="30" class="seekbar" id="gewicht" name="gewicht" oninput="x2.value=parseInt(gewicht.value)">
-    <output name="x2" for="gewicht">30</output>
+    <input type="range" id="gewicht" min="30" max="150" value="30" name="gewicht">
+    <span id="laufe1"></span>
     <label> Kilogramm</label>
-
   </div>
 
   <br>
   </br>
-  <aside>
 
-
-    <section>
-
-      <nav>
         <div class="container">
           <div class="title">Bier:
             <img src="bilder/BierBild.PNG" alt="Bier " /> </div>
@@ -73,10 +64,7 @@
             <img src="bilder/WhiskyBild.PNG" alt="Whisky " /> </div>
         </div>
 
-      </nav>
-    </section>
-
-  </aside>
+    
 
 
   <!-- <div class='form-group'> <label>Getränk: <select name='drink1' size='1'><option selected value='999'><option value='1'>kleines Glas Bier (0.2 l)
@@ -101,10 +89,7 @@
   <br>
   </br>
   <div class="box">
-    <div class="gtBtn">
-
-      <button type="getraenk" class="button">Glas Bier (0.33 l)</button> </div>
-
+    <div class="gtBtn"> <button type="getraenk" class="button">Glas Bier (0.33 l)</button> </div>
     <div class="gtBtn"> <button type="getraenk" class="button">grosses Glas Bier (0.5 l)</button> </div>
     <div class="gtBtn"> <button type="getraenk" class="button">Piccolo Wein (0.2 l)</button> </div>
     <div class="gtBtn"> <button type="getraenk" class="button">0,375l Wein (0.375 l)</button> </div>
@@ -128,7 +113,7 @@
   </br>
 
   <footer>
-    <button type="getraenkEinfügen" class="button">Noch ein Getränk eingeben</button>
-    <button type="besteatigen" class="button">Berechne den Promillewert</button>
+    <button type="getraenkEinfügen" id="neuerBtn" class="button">Noch ein Getränk eingeben</button>
+    <button type="besteatigen" id="ergebnisBtn" class="button">Berechne den Promillewert</button>
   </footer>
 </body>
