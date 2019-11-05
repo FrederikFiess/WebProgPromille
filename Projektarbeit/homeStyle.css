@@ -12,7 +12,7 @@ a:active {text-decoration: underline; background-color: #EFEFEF;}
 #navigation {margin-top: 20px;font-size: 300%; text-align: center;font-family: "Trebuchet MS", Helvetica, sans-serif;letter-spacing: 4px;}
 #buttonStart {margin-top: 50px; text-align: center;}
 
-body { background-image:url(alkohol.jpg); }
+body { background-image:url(bilder/alkohol.jpg); }
 
 button:hover {
   color:white;
