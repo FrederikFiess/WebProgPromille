@@ -72,27 +72,32 @@ main {}
 
 #bier{
   background-color: rgb(221, 207, 175);
+  float: right;
 }
 
 #wein{
   background-color: rgb(221, 207, 175);
+  float: right;
 }
 
 #likör{
   background-color: rgb(221, 207, 175);
+  float: right;
 }
 
 #schnaps{
   background-color: rgb(221, 207, 175);
+  float: right;
 }
 
 #whisky{
   background-color: rgb(221, 207, 175);
+  float: right;
 }
 
 #wodka{
   background-color: rgb(221, 207, 175);
-
+  float: right;
 }
 
 #neuerBtn {}
