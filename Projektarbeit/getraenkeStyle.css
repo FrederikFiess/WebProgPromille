@@ -42,8 +42,17 @@ header {
 }
 
 h3 {
-
   font-size: 25px;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+h4 {
+  font-size: 20px;
+  text-align: left;
+}
+h5 {
+  font-size: 20px;
+  text-align: left;
 }
 
 header a{
@@ -90,20 +99,26 @@ ul{
 #boxes{
   margin-top:40px;
   float: left;
+  text-align: center;
+
+
+
+
 
 }
 
 #boxes .box{
   float:left;
-  text-align: center;
   width:20px
   padding:10px;
   align-items: flex-start;
 }
 
 #boxes .box img{
-  width:220px;
-  height: 150px;
+  width:80%;
+  height: 20%;
+  margin-top: 40px;
+  border: 1px solid lightgrey;
 }
 
 #logotext {
@@ -115,6 +130,13 @@ ul{
 
 #auswahl{
   float: left;
+}
+
+#beschreibung{
+  font-size: 15pt;
+
+  text-align: left;
+
 }
 
 
@@ -131,8 +153,8 @@ main .box {
     min-height:100px;      /* padding und border nicht zur Größe hinzuaddieren */
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: calc(50% - 0.2em);  /* 0.2em = 2x margin */
-    max-width: calc(50% - 0.2em);   /* 0.2em = 2x margin */
+    flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
+    max-width: calc(90% - 0.2em);   /* 0.2em = 2x margin */
 
     padding: 0.75em;
     border: 1px solid lightgrey;
@@ -161,26 +183,37 @@ footer button:hover {
     cursor: pointer;
 }
 
-/*für kleine Formate*/
-
 @media (min-width: 800px) {
     html {
-        font-size: 1pt;
+        font-size: 10pt;
     }
 
     main .box {
-        flex-basis: calc(25% - 0.3em);
-        max-width: calc(25% - 0.3em);
+        flex-basis: calc(90% - 0.3em);
+        max-width: calc(90% - 0.3em);
     }
 }
 
-/*für große Formate*/
+@media (min-width: 900px) {
+    html {
+        font-size: 12pt;
+    }
 
-@media (min-width: 1200px) {
+    main .box {
+        flex-basis: calc(50% - 0.3em);
+        max-width: calc(50% - 0.3em);
+}
+
+}
+
+@media (min-width: 1500px) {
     html {
         font-size: 14pt;
     }
-
+    main .box {
+        flex-basis: calc(25% - 0.3em);
+        max-width: calc(25% - 0.3em);
+}
 
     footer {
         display: flex;
@@ -209,6 +242,8 @@ footer button {
 
     border: 0;
     border-radius: 0.25em;
+
+    font-size: 17pt;
 }
 
 footer button:hover {
