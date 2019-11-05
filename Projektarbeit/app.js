@@ -19,18 +19,16 @@ window.addEventListener("load", () => {
   let flascheSchnaps = document.getElementById("sFla");
   let kleinesWodka = document.getElementById("woKlein");
   let großesWokda = document.getElementById("woGroß");
-  let flascheWodka = document.getElementById("woFla")
+  let flascheWodka = document.getElementById("woFla");
   let kleinesWhisky = document.getElementById("whKlein");
   let großesWhisky = document.getElementById("whGroß");
-  let flascheWodka = document.getElementById("whFla")
+  let flascheWhisky = document.getElementById("whFla");
 
 
-  let neuesGetraenk = document.getElementById("neuerBtn");
   let ergebnis = document.getElementById("ergebnisBtn");
 
   output.innerHTML = rangeHoehe.value;
   output1.innerHTML = rangeGewicht.value;
-
 
 
   rangeHoehe.oninput = function() {
@@ -40,8 +38,6 @@ window.addEventListener("load", () => {
   rangeGewicht.oninput = function() {
     output1.innerHTML = this.value;
   }
-
-
 
 
 
