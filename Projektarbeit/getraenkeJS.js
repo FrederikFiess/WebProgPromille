@@ -1,22 +1,20 @@
 window.addEventListener("load", () => {
-    let newButton = document.getElementById("weiteresGetränk")
-      let memoList = document.querySelector("main .box");
+    let getraenkHinzufuegen = document.getElementById("weiteresGetränk")
+      let getraenkeListe = document.querySelector("main .container");
 
 
-      let insertMemo = text => {
-          let liElement = document.createElement("main");
-          memoList.appendChild(liElement);
+      let insertGetraenk = text => {
+          let getraenkElement = document.createElement("div class = box");
+          getraenkeListe.appendChild(getraenkElement);
 
-          let memoTextElement = document.createElement("main. box");
-          memoTextElement.textContent = text;
-          liElement.appendChild(memoTextElement);
+          let getraenkUeberschrift = document.createElement("h3");
+          getraenkUeberschrift.textContent = text;
+          getraenkElement.appendChild(getraenkUeberschrift);
         }
 
-        newButton.addEventListener("click", () => {
-            // Memotext vom Anwender abfragen
+        getraenkHinzufuegen.addEventListener("click", () => {
             let text = prompt("Geben Sie die Bezeichnug des Getränkes ein");
             if (text === null) return;
 
-            // Neues Element in die HTML-Liste einfügen
-            insertMemo(text);
+            insertGetraenk(text);
         });
