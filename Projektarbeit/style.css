@@ -70,36 +70,51 @@ main {}
   height: 85.5%;
 }
 
+
 #bier{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
 #wein{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
 #likör{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
 #schnaps{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
 #whisky{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
 #wodka{
   background-color: rgb(221, 207, 175);
   float: right;
+  border: none;
 }
 
-#neuerBtn {}
+footer {
 
-#ergebnisBtn {}
+}
+#neuerBtn {
+  float: left;
+}
+
+#ergebnisBtn {
+float: right;
+
+}
