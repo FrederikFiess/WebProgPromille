@@ -40,9 +40,23 @@ window.addEventListener("load", () => {
   }
 
 
+  function myFunction() {
+    document.getElementById("bKlein").value = document.getElementById("bier");
+
+let getraenke = [
+  new getraenk (Bier, 5, 0,5);
+  new getraenk (Wein, 12, 0,1); 
+]
+
+class getraenk {
+  constructor(name, alkohol, menge,) {
+    this.name = name;
+    this. alkohol = alkohol;
+    this.menge = menge;
+  }
+}
 
 
-
-
-
+  }
+}
 });
