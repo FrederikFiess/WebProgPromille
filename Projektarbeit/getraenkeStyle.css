@@ -28,7 +28,7 @@ header, main, footer {
     padding: 0.5rem;
 
 }
-.container{
+.box{
   width:90%;
   margin:auto;
   overflow:hidden;
@@ -148,10 +148,10 @@ main {
 }
 
 main .box {
-    float: left;
+    float: right;
     box-sizing: border-box;
     max-height: calc(50% - 0.2em);
-    min-height:100px;      /* padding und border nicht zur Größe hinzuaddieren */
+    min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
