@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sammlung der Getränke</title>
+    <title>🥂 Online-Promillerechner</title>
     <link rel="stylesheet" href="getraenkeStyle.css" />
   </head>
   <body>
@@ -20,22 +20,19 @@
             </nav>
         </section>
       </p>
-
-
-
-
 </div>
 
     </header>
 
     <main>
       <section id="boxes">
-        <div class="container">
+
+        <div class="container" id="DrinkBox">
           <div class="box">
             <img src="bilder/BierBild.png">
             <h3>Bier</h3>
-            <p><h4>Menge: </h4></p>
-            <p><h5>Alkoholgehalt: </h5></p>
+            <h4>Menge: </h4>
+            <h5>Alkoholgehalt: </h5>
             <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt, etwa Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
           </div>
           <div class="box">
@@ -74,11 +71,71 @@
             <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>
           </div>
         </div>
+
       </section>
   </main>
 
     <footer>
-      <button id="weiteresGetraenk">Weiteres Getränk hinzufügen</button>
+
+      <div id="missingGetraenk">
+        <p>Sie haben das gewünschte Getränk nicht gefunden? <br> Nachfolgend können Sie ein neues Getränk anlegen</p>
+      </div>
+
+      <input id="nameEingeben" placeholder="Name eingeben" </input>
+      <input id="mengeEingeben" placeholder="Menge eingeben" </input>
+      <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben"</input>
+      <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben"</input>
+
+      <button onclick="addDrink()" id="weiteresGetraenk">Weiteres Getränk hinzufügen</button>
+
+      <script>
+      function addDrink() {
+
+        //den Wert der Eingaben in Variablen speichern
+        var _name = document.getElementById('nameEingeben').value;
+        var _menge = document.getElementById('mengeEingeben').value;
+        var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
+        var _beschreibung = document.getElementById('beschreibungEingeben').value;
+
+        //die einzelnen Elemente erzeuegn
+        let newElement1 = document.createElement('div');
+        let newElement2 = document.createElement('img');
+        let newElement3 = document.createElement('h3');
+        let newElement4 = document.createElement('p');
+        let newElement5 = document.createElement('h4');
+        let newElement6 = document.createElement('p');
+        let newElement7 = document.createElement('h5');
+        let newElement8 = document.createElement('p');
+
+        //die src von img setze
+        newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
+
+        //die einzelnen Elemente aneinander anhängen und verschachteln
+        newElement1.appendChild(newElement2);
+        newElement1.appendChild(newElement3);
+        newElement1.appendChild(newElement4);
+        newElement4.appendChild(newElement5);
+        newElement1.appendChild(newElement6);
+        newElement6.appendChild(newElement7);
+        newElement1.appendChild(newElement8);
+
+        //den Elementen die benötigten id, bzw. class zuweisen
+        newElement1.className="box";
+        newElement8.idName="beschreibung";
+        newElement2.idName="universalBild";
+
+        //bestimmte Elemente mit Text füllen
+        newElement3.textContent=_name;
+        newElement5.textContent='Menge: '+ _menge;
+        newElement7.textContent='Alkoholgehalt' + _alkgehalt;
+        newElement8.textContent=_beschreibung;
+
+        //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
+        let DrinkBox = document.getElementById('DrinkBox');
+        DrinkBox.appendChild(newElement1)
+      }
+      </script>
+
     </footer>
 
   </body>

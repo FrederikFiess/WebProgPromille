@@ -1,20 +1,22 @@
-window.addEventListener("load", () => {
-    let getraenkHinzufuegen = document.getElementById("weiteresGetränk")
-      let getraenkeListe = document.querySelector("main .container");
+function addDrink(name, menge, alkgehalt, beschreibung) {
+  var _name = name;
+  var _menge = menge;
+  var _alkgehalt = alkgehalt;
+  var _beschreibung = beschreibung;
 
 
-      let insertGetraenk = text => {
-          let getraenkElement = document.createElement("div class = box");
-          getraenkeListe.appendChild(getraenkElement);
+  let newElement = document.createElement('div');
+  newElement.textContent('hello');
+  /*new Element.textContent = '<img src="bilder/WhiskyBild.png">
+                              <h3>Whisky</h3>
+                              <p><h4>Menge: </h4></p>
+                              <p><h5>Alkoholgehalt: </h5></p>
+                              <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>';*/
+  let DrinkBox = document.getElementById('DrinkBox');
+  DrinkBox.appendChild(newElement)
 
-          let getraenkUeberschrift = document.createElement("h3");
-          getraenkUeberschrift.textContent = text;
-          getraenkElement.appendChild(getraenkUeberschrift);
-        }
+  //var text = _beschreibung;
 
-        getraenkHinzufuegen.addEventListener("click", () => {
-            let text = prompt("Geben Sie die Bezeichnug des Getränkes ein");
-            if (text === null) return;
-
-            insertGetraenk(text);
-        });
+  //document.getElementById("demo").innerHTML = text3;
+  //document.main.appendChild(newElement);
+}

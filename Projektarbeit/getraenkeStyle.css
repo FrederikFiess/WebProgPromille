@@ -1,6 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 }
 
@@ -27,7 +28,7 @@ header, main, footer {
     padding: 0.5rem;
 
 }
-.container{
+.box{
   width:90%;
   margin:auto;
   overflow:hidden;
@@ -147,10 +148,10 @@ main {
 }
 
 main .box {
-    float: left;
+    float: right;
     box-sizing: border-box;
     max-height: calc(50% - 0.2em);
-    min-height:100px;      /* padding und border nicht zur Größe hinzuaddieren */
+    min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
@@ -166,7 +167,7 @@ main .box {
 /* Fußzeile */
 footer button {
     display: block;
-    width: 90%;
+    width: 30%;
     padding: 0.5em;
     margin-bottom: 0.5em;
 
@@ -232,7 +233,7 @@ footer button:hover {
 footer button {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 85px;
     padding: 0.5em;
     margin-bottom: 0.5em;
 
@@ -249,4 +250,86 @@ footer button {
 footer button:hover {
     background-color: rgb(65, 94, 138);
     cursor: pointer;
+}
+
+#missingGetraenk {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-right: 3em;
+  flex: 1;
+}
+
+#nameEingeben {
+  display: block;
+  width: 10%;
+  height: 85px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+
+  border: solid;
+  border-radius: 0.25em;
+
+  font-size: 13pt;
+
+
+}
+
+
+#mengeEingeben {
+  display: block;
+  width: 10%;
+  height: 85px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+
+  border: solid;
+  border-radius: 0.25em;
+
+  font-size: 13pt;
+
+
+}
+
+#alkoholGehaltEingeben {
+  display: block;
+  width: 10%;
+  height: 85px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+
+  border: solid;
+  border-radius: 0.25em;
+
+  font-size: 13pt;
+
+}
+
+#beschreibungEingeben {
+  display: block;
+  width: 10%;
+  height: 85px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+
+  border: solid;
+  border-radius: 0.25em;
+
+  font-size: 13pt;
+
+
+
+}
+
+::-webkit-input-placeholder {
+  color: #000000;
+  text-align: center;
+  align-items: center;
 }
