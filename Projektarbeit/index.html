@@ -6,6 +6,7 @@
   <title>🥂 Projektarbeit</title>
   <link rel="stylesheet" href="style.css" />
   <script src="app.js"></script>
+  <script src="getraenkeJS.js"></script>
 </head>
 
 <body>
@@ -119,6 +120,10 @@
   </div>
   <br>
   </br>
+
+
+  <input type="text" onchange="document.getElementById('anderes').value=this.value"/>
+  <input type="text" id="anderes" />
 
   <footer>
     <a href="getraenke.html"><button type="getraenkEinfügen" id="neuerBtn">Noch ein neues Getränk eingeben</button></a>

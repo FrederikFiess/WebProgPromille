@@ -254,7 +254,6 @@ footer button:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 input[required] {
   border-color: red;
 
@@ -262,7 +261,7 @@ input[required] {
 }
 
  .inputFelder{
-=======
+}
 #missingGetraenk {
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -270,7 +269,7 @@ input[required] {
   flex: 1;
 }
 
-#nameEingeben {
+ #nameEingeben {
   display: block;
   width: 10%;
   height: 85px;
@@ -334,17 +333,19 @@ input[required] {
   border-radius: 0.25em;
 
   font-size: 13pt;
->>>>>>> 6ac62c0c5cfeb41057ab5659bc49937fc428db26
+
 
 
 
 }
-<<<<<<< HEAD
-=======
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
   color: #000000;
   text-align: center;
   align-items: center;
 }
->>>>>>> 6ac62c0c5cfeb41057ab5659bc49937fc428db26
+
+ /* #missingGetraenk{
+   display: block;
+
+} */

@@ -105,11 +105,11 @@
 
   </main>
 
-<<<<<<< HEAD
-  <footer>
+
+
 
     <!-- <button onclick="addDrink()" id="weiteresGetraenk">Weiteres Getränk hinzufügen</button> -->
-    <form name="form1" onsubmit="pruefen()">
+    <!-- <form name="form1" onsubmit="pruefen()">
       <span class="inputFelder">
         <input id="nameEingeben" placeholder="Name des Getränks" required="required"></input>
         <input id="mengeEingeben" placeholder="Menge des Getränks" required="required"></input>
@@ -118,22 +118,24 @@
         <input type="Submit" name="submit_button" value="Weiteres Getränk hinzufügen" id="weiteresGetraenk" onclick="addDrink()"></input>
         <input type="reset">
       </span>
-    </form>
-    <script>
-      function addDrink() {
-=======
-    <footer>
+      </div>
+    </form> -->
 
+
+
+
+    <footer>
       <div id="missingGetraenk">
         <p>Sie haben das gewünschte Getränk nicht gefunden? <br> Nachfolgend können Sie ein neues Getränk anlegen</p>
-      </div>
 
       <input id="nameEingeben" placeholder="Name eingeben" </input>
       <input id="mengeEingeben" placeholder="Menge eingeben" </input>
       <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben"</input>
       <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben"</input>
->>>>>>> 6ac62c0c5cfeb41057ab5659bc49937fc428db26
 
+<button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
+      <script>
+        function addDrink() {
 
 
         //den Wert der Eingaben in Variablen speichern
@@ -142,16 +144,16 @@
         var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
         var _beschreibung = document.getElementById('beschreibungEingeben').value;
 
-        function pruefen() {
-          if (_name.value == '') {
-            alert("Bitte den Getränkenamen eingeben!");
-          }
-        else  if (_menge.value == '') {
-            alert("Bitte die Menge eingeben!");
-          }
-        else  if (a._alkgehalt.value == '') {
-            alert("Bitte den Alkoholgehalt eingeben!");
-          } else {
+        // function pruefen() {
+        //   if (_name.value == '') {
+        //     alert("Bitte den Getränkenamen eingeben!");
+        //   }
+        // else  if (_menge.value == '') {
+        //     alert("Bitte die Menge eingeben!");
+        //   }
+        // else  if (a._alkgehalt.value == '') {
+        //     alert("Bitte den Alkoholgehalt eingeben!");
+        //   } else
             //die einzelnen Elemente erzeuegn
             let newElement1 = document.createElement('div');
             let newElement2 = document.createElement('img');
@@ -197,10 +199,10 @@
             //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
             let DrinkBox = document.getElementById('DrinkBox');
             DrinkBox.appendChild(newElement1)
-          }
+
 
         }
-      }
+
     </script>
 
   </footer>
