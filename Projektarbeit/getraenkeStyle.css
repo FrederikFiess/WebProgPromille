@@ -23,7 +23,7 @@ html {
 
 }
 
-header, main, footer {
+header, footer {
   text-align: right;
     padding: 0.5rem;
 
@@ -140,15 +140,17 @@ ul{
 
 }
 
-
+#nameEingeben {
+  float
+}
 
 /* Main-Teil */
 main {
-  text-align: right;
+    padding: 0.5rem;
 }
 
 main .box {
-    float: right;
+
     box-sizing: border-box;
     max-height: calc(50% - 0.2em);
     min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
@@ -270,7 +272,27 @@ footer button:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .missingGetraenk {
+=======
+<<<<<<< HEAD
+input[required] {
+  border-color: red;
+
+
+}
+
+ .inputFelder{
+=======
+#missingGetraenk {
+  font-size: 20px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-right: 3em;
+  flex: 1;
+}
+
+#nameEingeben {
+>>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
   display: block;
   width: 10%;
   padding-right: 5em;
@@ -297,6 +319,7 @@ footer button:hover {
 
 }
 
+<<<<<<< HEAD
 .buttonserie {
       display: block;
       width: 100%;
@@ -305,6 +328,24 @@ footer button:hover {
       margin-bottom: 0.5em;
       background-color: #FFFFFF;
       font-weight: bold;
+=======
+#beschreibungEingeben {
+  display: block;
+  width: 10%;
+  height: 85px;
+  padding: 0.5em;
+  margin-right: 0.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: bold;
+
+  border: solid;
+  border-radius: 0.25em;
+
+  font-size: 13pt;
+>>>>>>> 6ac62c0c5cfeb41057ab5659bc49937fc428db26
+
+
+>>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
 
       border: 0;
       border-radius: 0.25em;
@@ -312,6 +353,8 @@ footer button:hover {
       font-size: 13pt;
       font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+<<<<<<< HEAD
+=======
 
 }
 ::-webkit-input-placeholder {
@@ -319,3 +362,4 @@ footer button:hover {
   text-align: center;
   align-items: center;
 }
+>>>>>>> 6ac62c0c5cfeb41057ab5659bc49937fc428db26
