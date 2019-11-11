@@ -23,7 +23,7 @@ html {
 
 }
 
-header, main, footer {
+header, footer {
   text-align: right;
     padding: 0.5rem;
 
@@ -140,15 +140,17 @@ ul{
 
 }
 
-
+#nameEingeben {
+  float
+}
 
 /* Main-Teil */
 main {
-  text-align: right;
+    padding: 0.5rem;
 }
 
 main .box {
-    float: right;
+
     box-sizing: border-box;
     max-height: calc(50% - 0.2em);
     min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
@@ -250,4 +252,16 @@ footer button {
 footer button:hover {
     background-color: rgb(65, 94, 138);
     cursor: pointer;
+}
+
+input[required] {
+  border-color: red;
+
+
+}
+
+ .inputFelder{
+
+
+
 }

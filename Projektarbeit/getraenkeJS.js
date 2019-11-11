@@ -1,3 +1,5 @@
+window.addEventListener("load", () => {
+
 function addDrink(name, menge, alkgehalt, beschreibung) {
   var _name = name;
   var _menge = menge;
@@ -20,3 +22,5 @@ function addDrink(name, menge, alkgehalt, beschreibung) {
   //document.getElementById("demo").innerHTML = text3;
   //document.main.appendChild(newElement);
 }
+
+});
