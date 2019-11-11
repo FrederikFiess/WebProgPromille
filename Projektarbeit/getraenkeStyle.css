@@ -272,13 +272,9 @@ footer button:hover {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 .missingGetraenk {
-=======
-<<<<<<< HEAD
->>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
+
 input[required] {
   border-color: red;
 
@@ -294,9 +290,9 @@ input[required] {
   flex: 1;
 }
 
-<<<<<<< HEAD
+
  #nameEingeben {
-=======
+
 #nameEingeben {
 >>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
 >>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
@@ -326,7 +322,6 @@ input[required] {
 
 }
 
-<<<<<<< HEAD
 .buttonserie {
       display: block;
       width: 100%;
@@ -335,7 +330,7 @@ input[required] {
       margin-bottom: 0.5em;
       background-color: #FFFFFF;
       font-weight: bold;
-=======
+
 #beschreibungEingeben {
   display: block;
   width: 10%;
@@ -352,7 +347,7 @@ input[required] {
 
 
 
->>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
+
 
       border: 0;
       border-radius: 0.25em;
@@ -361,9 +356,9 @@ input[required] {
       font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-<<<<<<< HEAD
+
  ::-webkit-input-placeholder {
-=======
+
 }
 ::-webkit-input-placeholder {
 >>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
