@@ -207,6 +207,7 @@ footer button:hover {
         max-width: calc(50% - 0.3em);
 }
 
+
 }
 
 @media (min-width: 1500px) {
@@ -228,8 +229,25 @@ footer button:hover {
     }
 
     footer button:last-child {
+
         margin-right: 0;
     }
+    .missingGetraenk {
+      margin-right: 0.5em;
+      max-width: 20%
+    }
+    .buttonserie {
+      flex: 1;
+      margin-right: 0.5em;
+      max-width: 30%
+    }
+
+    .buttonserie:last-child {
+      padding-right: 10em;
+      margin-right: 10em;
+    }
+
+
 }
 
 footer button {
@@ -254,6 +272,13 @@ footer button:hover {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.missingGetraenk {
+=======
+<<<<<<< HEAD
+>>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
 input[required] {
   border-color: red;
 
@@ -269,57 +294,48 @@ input[required] {
   flex: 1;
 }
 
+<<<<<<< HEAD
  #nameEingeben {
+=======
+#nameEingeben {
+>>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
+>>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
   display: block;
   width: 10%;
+  padding-right: 5em;
+}
+
+.missingGetraenk {
+  display: block;
+  width: 100%;
   height: 85px;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: bold;
+  text-align: left;
+}
 
-  border: solid;
-  border-radius: 0.25em;
-
-  font-size: 13pt;
-
+.buttonserie {
+      display: block;
+      width: 10%;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      background-color: #FFFFFF;
+      font-weight: bold;
+  2
+      border: 0;
+      border-radius: 0.25em;
+      border-style: dotted;
 
 }
 
-
-#mengeEingeben {
-  display: block;
-  width: 10%;
-  height: 85px;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: bold;
-
-  border: solid;
-  border-radius: 0.25em;
-
-  font-size: 13pt;
-
-
-}
-
-#alkoholGehaltEingeben {
-  display: block;
-  width: 10%;
-  height: 85px;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: bold;
-
-  border: solid;
-  border-radius: 0.25em;
-
-  font-size: 13pt;
-
-}
-
+<<<<<<< HEAD
+.buttonserie {
+      display: block;
+      width: 100%;
+      height: 85px;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      background-color: #FFFFFF;
+      font-weight: bold;
+=======
 #beschreibungEingeben {
   display: block;
   width: 10%;
@@ -336,10 +352,21 @@ input[required] {
 
 
 
+>>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
 
+      border: 0;
+      border-radius: 0.25em;
+      border-style: dotted;
+      font-size: 13pt;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+<<<<<<< HEAD
  ::-webkit-input-placeholder {
+=======
+}
+::-webkit-input-placeholder {
+>>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
   color: #000000;
   text-align: center;
   align-items: center;
