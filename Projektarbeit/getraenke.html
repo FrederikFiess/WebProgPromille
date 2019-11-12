@@ -219,10 +219,10 @@
 
 
     <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
-
-
-
+    <button id="testFall" onclick="ausgeben()"> Test</button>
     <script>
+
+
       function addDrink() {
 
 
@@ -287,13 +287,29 @@
         //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
         let DrinkBox = document.getElementById('DrinkBox');
         DrinkBox.appendChild(newElement1)
+
+
+
       }
     </script>
     <script>
+
       function aufsummieren(id, wert) {
         var _ergebnis = Number(id.value) + Number(wert);
         id.value = _ergebnis;
       }
+
+    /*    var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'),
+                              document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')]; */
+
+      function ausgeben(){
+
+        let i;
+        for(i=0; i < GetraenkeListe.length; i++){
+          alert(GetraenkeListe[i].value);
+        }
+      }
+
     </script>
 
 
