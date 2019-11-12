@@ -1,6 +1,30 @@
 window.addEventListener("load", () => {
 
 
+
+
+    let rangeHoehe = document.getElementById("hoehe");
+    let output = document.getElementById("laufe");
+    let rangeGewicht = document.getElementById("gewicht");
+    let output1 = document.getElementById("laufe1");
+
+
+
+    output.innerHTML = rangeHoehe.value;
+    output1.innerHTML = rangeGewicht.value;
+
+
+
+    rangeHoehe.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    rangeGewicht.oninput = function() {
+      output1.innerHTML = this.value;
+    }
+
+  
+
 function addDrink(name, menge, alkgehalt, beschreibung) {
   var _name = name;
   var _menge = menge;

@@ -71,7 +71,35 @@
 
   </header>
 
+
   <main>
+
+<p id="begrüßung"> <strong> Bitte wählen Sie im folgenden Ihr Geschlecht, Ihre Größe und Ihr Gewicht aus </strong>
+    <div class="radioBt">
+      <b> Sie sind: </b>
+      <input type="radio" name="geschlecht" value="Männlich"> Männlich
+      <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
+    </div>
+
+
+  <div class="seekbar">
+    <br>
+    <b> Ihre Körpergröße (in cm): </b>
+    <input type="range" id="hoehe" min="120" max="220" value="120" name="hoehe">
+    <span id="laufe"></span>
+    <label> Zentimeter</label>
+    </br>
+  </div>
+
+  <div class="seekbar">
+    <b> Ihr Gewicht (kg): </b>
+    <input type="range" id="gewicht" min="40" max="150" value="40" name="gewicht">
+    <span id="laufe1"> </span>
+    <label> Kilogramm</label>
+  </div>
+
+
+
     <section id="boxes">
 
       <div class="container" id="DrinkBox">
@@ -170,7 +198,7 @@
 
 
   <footer>
-  
+
 
 
       <div class="missingGetraenk" id="missingGetraenk">

@@ -5,9 +5,7 @@ html, body {
 
 
 
-.hidden {
-    display: none;
-}
+
 
 @media (min-width: 40em) {
     html {
@@ -40,11 +38,6 @@ nav li {
     margin: 0;
 }
 
-nav li.active {
-
-    border: 0px solid rgb(33, 146, 187);
-    border-bottom-width: 3px;
-}
 
 nav li:hover {
 
@@ -147,11 +140,6 @@ header a:hover{
 
 }
 
-ul{
-  text-align: left;
-
-
-}
 
 
 
@@ -205,6 +193,21 @@ ul{
 /* Main-Teil */
  main {
     padding: 0.5rem;
+}
+
+#begrüßung{
+  text-align: center;
+  font-size:  15pt;
+  color: crimson;
+}
+
+main .seekbar{
+
+}
+
+
+main .radioBt{
+
 }
 
 main .box {
