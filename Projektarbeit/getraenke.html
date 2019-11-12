@@ -74,140 +74,139 @@
 
   <main>
 
-<p id="begrüßung"> <strong> Bitte wählen Sie im folgenden Ihr Geschlecht, Ihre Größe und Ihr Gewicht aus </strong>
-    <div class="radioBt">
-      <b> Sie sind: </b>
-      <input type="radio" name="geschlecht" value="Männlich"> Männlich
-      <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
-    </div>
-
-
-  <div class="seekbar">
-    <br>
-    <b> Ihre Körpergröße (in cm): </b>
-    <input type="range" id="hoehe" min="120" max="220" value="120" name="hoehe">
-    <span id="laufe"></span>
-    <label> Zentimeter</label>
-    </br>
-  </div>
-
-  <div class="seekbar">
-    <b> Ihr Gewicht (kg): </b>
-    <input type="range" id="gewicht" min="40" max="150" value="40" name="gewicht">
-    <span id="laufe1"> </span>
-    <label> Kilogramm</label>
-  </div>
+    <p id="begrüßung"> <strong> Bitte wählen Sie im folgenden Ihr Geschlecht, Ihre Größe und Ihr Gewicht aus </strong>
+      <div class="radioBt">
+        <b> Sie sind: </b>
+        <input type="radio" name="geschlecht" value="Männlich"> Männlich
+        <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
+      </div>
+      <br>
+      </br>
 
 
 
-    <section id="boxes">
 
-      <div class="container" id="DrinkBox">
-        <div class="box">
-          <img src="bilder/BierBild.png">
-          <h3>Bier</h3>
-          <h4>Menge: </h4>
-          <h5>Alkoholgehalt: </h5>
-          <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt, etwa
-            Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
-
-          <h6>Eingabe der getrunkenen Menge: </h5>
-          <button id="kleinesBier" value="0,33">Kleines Bier 0,33l </button>
-          <button id="großesBier" value="0,5">Großes Bier 0,5l</button>
-
-        </div>
-        <div class="box">
-          <img src="bilder/WeinBild.png">
-          <h3>Wein</h3>
-          <p>
-            <h4>Menge: </h4>
-          </p>
-          <p>
-            <h5>Alkoholgehalt: </h5>
-          </p>
-          <p id="beschreibung">Wein ist ein alkoholisches Getränk aus dem vergorenen Saft der Beeren der Edlen Weinrebe. Wein ist ein Genussmittel. Durch spezifische önologische Ausbaumethoden kommt es bei der Lagerung zu zahlreichen biochemischen
-            Reifeprozessen, die sehr vielfältig sein können und auch dazu führen, dass manche Weine jahrzehntelang reifen und haltbar sind. (Quelle: wikipedia)</p>
-
-            <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="PiccoloWein" value="0,2">Piccolo Wein 0,2l</button>
-              <button id="Wein" value="0,375">Wein 0,375l</button>
-              <button id="HalbWein" value="0,5">Wein 0,5l </button>
-              <button id="FlascheWein" value="0,7">Flasche Wein 0,7l</button>
+      <div class="seekbar">
 
 
-        </div>
-        <div class="box">
-          <img src="bilder/LikoerBild.png">
-          <h3>Likör</h3>
-          <p>
-            <h4>Menge: </h4>
-          </p>
-          <p>
-            <h5>Alkoholgehalt: </h5>
-          </p>
-          <p id="beschreibung">Liköre sind aromatische Spirituosen mit relativ hohem Zuckergehalt (mindestens 100 Gramm pro Liter). Der Alkoholgehalt liegt normalerweise bei 15 bis 35 % Vol, es gibt aber auch stärkere und schwächere Liköre, zum
-            Beispiel Chartreuse verte mit 55 % Vol oder Aperol mit 11 oder 15 % Vol. (Quelle: wikipedia)</p>
-          <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinLikör" value="0,02">Kleiner Likör 0,02l</button>
-              <button id="großLikör" value="0,04">Großer Likör 0,04l</button>
-              <button id="HalbLikör" value="0,375">Halbe Flasche Likör 0,375l </button>
-        </div>
-        <div class="box">
-          <img src="bilder/SchnapsBild.png">
-          <h3>Schnaps</h3>
-          <p>
-            <h4>Menge: </h4>
-          </p>
-          <p>
-            <h5>Alkoholgehalt: </h5>
-          </p>
-          <p id="beschreibung">Eine Spirituose, umgangssprachlich auch Schnaps oder abwertend Fusel genannt, ist eine alkoholische Flüssigkeit, die zum menschlichen Genuss bestimmt ist, besondere organoleptische Eigenschaften besitzt und nach
-            aktuellem EU-Recht einen Mindestalkoholgehalt von 15 % Vol. aufweist; bei Eierlikör genügen 14 % Vol. Früher war auch die Bezeichnung Branntwein üblich, die noch heute in einigen Gesetzen verwendet wird. Die Gewinnung der alkoholischen
-            Basis erfolgt durch Brennen (Destillation) natürlicher, vergorener, pflanzlicher Erzeugnisse. (Quelle: wikipedia)</p>
 
-            <h6>Eingabe der getrunkenen Menge: </h5>
-                <button id="kleinSchnaps" value="0,02">Kleiner Schnaps 0,02l</button>
-                <button id="großSchnaps" value="0,04">Großer Schnaps 0,04l</button>
-                <button id="HalbSchnaps" value="0,375">Halbe Flasche Schnaps 0,375l </button>
-
-        </div>
-        <div class="box">
-          <img src="bilder/WodkaBild.png">
-          <h3>Wodka</h3>
-          <p>
-            <h4>Menge: </h4>
-          </p>
-          <p>
-            <h5>Alkoholgehalt: </h5>
-          </p>
-          <p id="beschreibung">Wodka ist eine meist farblose Spirituose mit einem Alkoholgehalt von idealerweise 40 Volumenprozent. Er zeichnet sich besonders durch seinen fast neutralen Geschmack und das Fehlen jeglicher Fuselöle, künstlicher Aromen
-            oder anderer fermentierter Stoffe aus. Er wird entweder pur getrunken oder in Cocktails vermischt. (Quelle: wikipedia)</p>
-            <h6>Eingabe der getrunkenen Menge: </h5>
-              <h7> Eingabe von neuen Werten</h7>
-                <button id="kleinWodka" value="0,02">Kleiner Wodka 0,02l</button>
-                <button id="großWodka" value="0,04">Großer Wodka 0,04l</button>
-                <button id="HalbWodka" value="0,375">Halbe Flasche Wodka 0,375l </button>
-
-        </div>
-        <div class="box">
-          <img src="bilder/WhiskyBild.png">
-          <h3>Whisky</h3>
-          <p>
-            <h4>Menge: </h4>
-          </p>
-          <p>
-            <h5>Alkoholgehalt: </h5>
-          </p>
-          <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>
-
-          <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinWhisky" value="0,02">Kleiner Whisky 0,02l</button>
-              <button id="großWhisky" value="0,04">Großer Whisky 0,04l</button>
-              <button id="HalbWhisky" value="0,375">Halbe Flasche Whisky 0,375l </button>
-        </div>
+        <b> Ihre Körpergröße (in cm): </b>
+        <input type="range" id="hoehe" min="120" max="220" value="120" name="hoehe">
+        <span id="laufe"></span>
+        <label> Zentimeter</label>
+      </div>
+      <br>
+      </br>
+      <div class="seekbar1">
+        <b> Ihr Gewicht (kg): </b>
+        <input type="range" id="gewicht" min="40" max="150" value="40" name="gewicht">
+        <span id="laufe1"> </span>
+        <label> Kilogramm</label>
       </div>
 
-    </section>
+
+
+      <section id="boxes">
+
+        <div class="container" id="DrinkBox">
+          <div class="box">
+            <img src="bilder/BierBild.png">
+            <h3>Bier</h3>
+            <h4>Menge: <input id="bier_menge_id" type="number" value="0" </input> </h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
+              <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt,
+                etwa
+                Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
+
+              <h6>Eingabe der getrunkenen Menge: </h5>
+                <button id="kleinesBier" onclick="aufsummieren(bier_menge_id, kleinesBier.value)" value="0.33">Kleines Bier 0,33l </button>
+                <button id="großesBier" onclick="aufsummieren(bier_menge_id, großesBier.value)" value="0.5">Großes Bier 0,5l</button>
+
+          </div>
+
+
+
+          <div class="box">
+            <img src="bilder/WeinBild.png">
+            <h3>Wein</h3>
+            <p>
+              <h4>Menge: <input id="wein_menge_id" type="number" value="0" </input> </h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="alkohol" value "12.5"> 12.5 Vol.-%</label></h5>
+            </p>
+            <p id="beschreibung">Wein ist ein alkoholisches Getränk aus dem vergorenen Saft der Beeren der Edlen Weinrebe. Wein ist ein Genussmittel. Durch spezifische önologische Ausbaumethoden kommt es bei der Lagerung zu zahlreichen biochemischen
+              Reifeprozessen, die sehr vielfältig sein können und auch dazu führen, dass manche Weine jahrzehntelang reifen und haltbar sind. (Quelle: wikipedia)</p>
+
+            <h6>Eingabe der getrunkenen Menge: </h5>
+              <button id="PiccoloWein" onclick="aufsummieren(wein_menge_id, PiccoloWein.value)" value="0.2">Piccolo Wein 0,2l</button>
+              <button id="Wein" onclick="aufsummieren(wein_menge_id, Wein.value)" value="0.375">Wein 0,375l</button>
+              <button id="HalbWein" onclick="aufsummieren(wein_menge_id, HalbWein.value)" value="0.5">Wein 0,5l </button>
+              <button id="FlascheWein" onclick="aufsummieren(wein_menge_id, FlascheWein.value)" value="0.7">Flasche Wein 0,7l</button>
+
+
+          </div>
+          <div class="box">
+            <img src="bilder/LikoerBild.png">
+            <h3>Likör</h3>
+            <p>
+              <h4>Menge: <input id="likör_menge_id" type="number" value="0" </input> </h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="alkohol" value "30"> 30 Vol.-%</label></h5>
+            </p>
+            <p id="beschreibung">Liköre sind aromatische Spirituosen mit relativ hohem Zuckergehalt (mindestens 100 Gramm pro Liter). Der Alkoholgehalt liegt normalerweise bei 15 bis 35 % Vol, es gibt aber auch stärkere und schwächere Liköre, zum
+              Beispiel Chartreuse verte mit 55 % Vol oder Aperol mit 11 oder 15 % Vol. (Quelle: wikipedia)</p>
+            <h6>Eingabe der getrunkenen Menge: </h5>
+              <button id="kleinLikör" onclick="aufsummieren(likör_menge_id, kleinLikör.value)" value="0.02">Kleiner Likör 0,02l</button>
+              <button id="großLikör" onclick="aufsummieren(likör_menge_id, großLikör.value)" value="0.04">Großer Likör 0,04l</button>
+              <button id="halbLikör" onclick="aufsummieren(likör_menge_id, halbLikör.value)" value="0.375">Halbe Flasche Likör 0,375l </button>
+          </div>
+          <div class="box">
+            <img src="bilder/SchnapsBild.png">
+            <h3>Schnaps</h3>
+            <p>
+              <h4>Menge: <input id="schnaps_menge_id" type="number" value="0" </input> </h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="alkohol" value "4"> 40 Vol.-%</label> </h5>
+            </p>
+            <p id="beschreibung">Eine Spirituose, umgangssprachlich auch Schnaps oder abwertend Fusel genannt, ist eine alkoholische Flüssigkeit, die zum menschlichen Genuss bestimmt ist, besondere organoleptische Eigenschaften besitzt und nach
+              aktuellem EU-Recht einen Mindestalkoholgehalt von 15 % Vol. aufweist; bei Eierlikör genügen 14 % Vol. Früher war auch die Bezeichnung Branntwein üblich, die noch heute in einigen Gesetzen verwendet wird. Die Gewinnung der alkoholischen
+              Basis erfolgt durch Brennen (Destillation) natürlicher, vergorener, pflanzlicher Erzeugnisse. (Quelle: wikipedia)</p>
+
+            <h6>Eingabe der getrunkenen Menge: </h5>
+              <button id="kleinSchnaps" onclick="aufsummieren(schnaps_menge_id, kleinSchnaps.value)" value="0.02">Kleiner Schnaps 0,02l</button>
+              <button id="großSchnaps" onclick="aufsummieren(schnaps_menge_id, großSchnaps.value)" value="0.04">Großer Schnaps 0,04l</button>
+              <button id="HalbSchnaps" onclick="aufsummieren(schnaps_menge_id, HalbSchnaps.value)" value="0.375">Halbe Flasche Schnaps 0,375l </button>
+
+          </div>
+          <div class="box">
+            <img src="bilder/WodkaBild.png">
+            <h3>Wodka</h3>
+            <p>
+              <h4>Menge: <input id="wodka_menge_id" type="number" value="0" </input> </h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="alkohol" value "45"> 45 Vol.-%</label> </h5>
+            </p>
+            <p id="beschreibung">Wodka ist eine meist farblose Spirituose mit einem Alkoholgehalt von idealerweise 40 Volumenprozent. Er zeichnet sich besonders durch seinen fast neutralen Geschmack und das Fehlen jeglicher Fuselöle, künstlicher
+              Aromen
+              oder anderer fermentierter Stoffe aus. Er wird entweder pur getrunken oder in Cocktails vermischt. (Quelle: wikipedia)</p>
+            <h6>Eingabe der getrunkenen Menge: </h5>
+              <button id="kleinWodka" onclick="aufsummieren(wodka_menge_id, kleinWodka.value)" value="0.02">Kleiner Wodka 0,02l</button>
+              <button id="großWodka" onclick="aufsummieren(wodka_menge_id, großWodka.value)" value="0.04">Großer Wodka 0,04l</button>
+              <button id="HalbWodka" onclick="aufsummieren(wodka_menge_id, HalbWodka.value)" value="0.375">Halbe Flasche Wodka 0,375l </button>
+
+          </div>
+          <div class="box">
+            <img src="bilder/WhiskyBild.png">
+            <h3>Whisky</h3>
+            <p>
+              <h4>Menge: <input id="whisky_menge_id" type="number" value="0" </input> </h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="alkohol" value "43"> 43 Vol.-%</label></h5>
+            </p>
+            <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>
+
+            <h6>Eingabe der getrunkenen Menge: </h5>
+              <button id="kleinWhisky" onclick="aufsummieren(whisky_menge_id, kleinWhisky.value)" value="0.02">Kleiner Whisky 0,02l</button>
+              <button id="großWhisky" onclick="aufsummieren(whisky_menge_id, großWhisky.value)" value="0.04">Großer Whisky 0,04l</button>
+              <button id="HalbWhisky" onclick="aufsummieren(whisky_menge_id, HalbWhisky.value)" value="0.375">Halbe Flasche Whisky 0,375l </button>
+          </div>
+        </div>
+
+      </section>
 
   </main>
 
@@ -235,87 +234,92 @@
 
 
 
-      <div class="missingGetraenk" id="missingGetraenk">
-        <p>Sie haben das gewünschte Getränk nicht gefunden? Nachfolgend können Sie ein neues Getränk anlegen:</p>
-      </div>
+    <div class="missingGetraenk" id="missingGetraenk">
+      <p>Sie haben das gewünschte Getränk nicht gefunden? Nachfolgend können Sie ein neues Getränk anlegen:</p>
+    </div>
 
 
 
-      <input class="buttonserie" id="nameEingeben" placeholder="Name eingeben" </input> <input class="buttonserie" id="mengeEingeben" placeholder="Menge eingeben" </input> <input class="buttonserie" id="alkoholGehaltEingeben"
-        placeholder="Alkoholgehalt eingeben" </input> <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben" </input> <!-- <input id="nameEingeben" placeholder="Name eingeben" </input> <input id="mengeEingeben"
-        placeholder="Menge eingeben" </input> <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben" </input> <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben" </input> -->
+    <input class="buttonserie" id="nameEingeben" placeholder="Name eingeben" </input> <input class="buttonserie" id="mengeEingeben" placeholder="Menge eingeben" </input> <input class="buttonserie" id="alkoholGehaltEingeben"
+      placeholder="Alkoholgehalt eingeben" </input> <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben" </input> <!-- <input id="nameEingeben" placeholder="Name eingeben" </input> <input id="mengeEingeben"
+      placeholder="Menge eingeben" </input> <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben" </input> <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben" </input> -->
 
 
-      <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
-      <script>
-        function addDrink() {
+    <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
+    <script>
+      function addDrink() {
 
 
-          //den Wert der Eingaben in Variablen speichern
-          var _name = document.getElementById('nameEingeben').value;
-          var _menge = document.getElementById('mengeEingeben').value;
-          var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
-          var _beschreibung = document.getElementById('beschreibungEingeben').value;
+        //den Wert der Eingaben in Variablen speichern
+        var _name = document.getElementById('nameEingeben').value;
+        var _menge = document.getElementById('mengeEingeben').value;
+        var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
+        var _beschreibung = document.getElementById('beschreibungEingeben').value;
 
-          // function pruefen() {
-          //   if (_name.value == '') {
-          //     alert("Bitte den Getränkenamen eingeben!");
-          //   }
-          // else  if (_menge.value == '') {
-          //     alert("Bitte die Menge eingeben!");
-          //   }
-          // else  if (a._alkgehalt.value == '') {
-          //     alert("Bitte den Alkoholgehalt eingeben!");
-          //   } else
-          //die einzelnen Elemente erzeuegn
-          let newElement1 = document.createElement('div');
-          let newElement2 = document.createElement('img');
-          let newElement3 = document.createElement('h3');
-          let newElement4 = document.createElement('p');
-          let newElement5 = document.createElement('h4');
-          let newElement6 = document.createElement('p');
-          let newElement7 = document.createElement('h5');
-          let newElement8 = document.createElement('p');
+        // function pruefen() {
+        //   if (_name.value == '') {
+        //     alert("Bitte den Getränkenamen eingeben!");
+        //   }
+        // else  if (_menge.value == '') {
+        //     alert("Bitte die Menge eingeben!");
+        //   }
+        // else  if (a._alkgehalt.value == '') {
+        //     alert("Bitte den Alkoholgehalt eingeben!");
+        //   } else
+        //die einzelnen Elemente erzeuegn
+        let newElement1 = document.createElement('div');
+        let newElement2 = document.createElement('img');
+        let newElement3 = document.createElement('h3');
+        let newElement4 = document.createElement('p');
+        let newElement5 = document.createElement('h4');
+        let newElement6 = document.createElement('p');
+        let newElement7 = document.createElement('h5');
+        let newElement8 = document.createElement('p');
 
-          //die src von img setze
-          newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
+        //die src von img setze
+        newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
 
-          //die einzelnen Elemente aneinander anhängen und verschachteln
-          newElement1.appendChild(newElement2);
-          newElement1.appendChild(newElement3);
-          newElement1.appendChild(newElement4);
-          newElement4.appendChild(newElement5);
-          newElement1.appendChild(newElement6);
-          newElement6.appendChild(newElement7);
-          newElement1.appendChild(newElement8);
-
-
-
+        //die einzelnen Elemente aneinander anhängen und verschachteln
+        newElement1.appendChild(newElement2);
+        newElement1.appendChild(newElement3);
+        newElement1.appendChild(newElement4);
+        newElement4.appendChild(newElement5);
+        newElement1.appendChild(newElement6);
+        newElement6.appendChild(newElement7);
+        newElement1.appendChild(newElement8);
 
 
 
-          //den Elementen die benötigten id, bzw. class zuweisen
-          newElement1.className = "box";
-          newElement8.idName = "beschreibung";
-          newElement2.idName = "universalBild";
 
 
 
-          //bestimmte Elemente mit Text füllen
-          newElement3.textContent = _name;
-          newElement5.textContent = 'Menge: ' + _menge;
-          newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
-          newElement8.textContent = _beschreibung;
+        //den Elementen die benötigten id, bzw. class zuweisen
+        newElement1.className = "box";
+        newElement8.idName = "beschreibung";
+        newElement2.idName = "universalBild";
 
 
 
-          //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
-          let DrinkBox = document.getElementById('DrinkBox');
-          DrinkBox.appendChild(newElement1)
+        //bestimmte Elemente mit Text füllen
+        newElement3.textContent = _name;
+        newElement5.textContent = 'Menge: ' + _menge;
+        newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
+        newElement8.textContent = _beschreibung;
 
 
-        }
-      </script>
+
+        //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
+        let DrinkBox = document.getElementById('DrinkBox');
+        DrinkBox.appendChild(newElement1)
+      }
+    </script>
+    <script>
+      function aufsummieren(id, wert) {
+        var _ergebnis = Number(id.value) + Number(wert);
+        id.value = _ergebnis;
+      }
+    </script>
+
 
   </footer>
 
