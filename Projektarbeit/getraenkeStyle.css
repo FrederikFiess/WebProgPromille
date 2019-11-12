@@ -7,7 +7,6 @@ html, body {
 	}
 
 
-
 	ul{
 	  margin:0;
 	  padding:0;
@@ -30,6 +29,10 @@ html, body {
 
 	}
 
+
+	header, main, footer {
+	  text-align: right;
+	    padding: 0.5rem;
 
 
 	}
@@ -236,6 +239,17 @@ html, body {
 	}
 
 
+	@media (min-width: 800px) {
+	    html {
+	        font-size: 10pt;
+	    }
+
+
+	    main .box {
+	        flex-basis: calc(90% - 0.3em);
+	        max-width: calc(90% - 0.3em);
+	    }
+	}
 
 
 	@media (min-width: 900px) {
@@ -291,22 +305,6 @@ html, body {
 	      max-width: 30%
 	    }
 
-#begrüßung{
-  text-align: center;
-  font-size:  15pt;
-  color: crimson;
-}
-
-main .seekbar{
-
-}
-
-
-main .radioBt{
-
-}
-
-main .box {
 
 	    .buttonserie:last-child {
 	      padding-right: 10em;
