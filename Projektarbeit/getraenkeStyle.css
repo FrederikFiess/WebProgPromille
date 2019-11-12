@@ -1,199 +1,295 @@
 html, body {
-    padding: 0;
-    margin: 0;
-}
+	    padding: 0;
+	    margin: 0;
+	    font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 
+	}
 
 
 
-@media (min-width: 40em) {
-    html {
+	ul{
+	  margin:0;
+	  padding:0;
+	}
 
-        font-size: 11pt;
-    }
 
+	li{
+	  margin:0;
+	  text-align: left;
+	  padding:0;
+	}
 
-}
 
-/* NAVIGATION */
-nav {
 
 
-    border: 0px solid #202020;
-    border-bottom-width: 3px;
-}
+	html {
+	    font-family: sans-serif;
+	    font-size: 11pt;
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -3px;
 
-    display: flex;
-}
+	}
 
-nav li {
-    padding: 1em;
-    margin: 0;
-}
 
 
-nav li:hover {
+	}
+	.box{
+	  width:90%;
+	  margin:auto;
+	  overflow:hidden;
 
 
-    border: 0px solid rgb(103, 197, 231);
-    border-bottom-width: 3px;
+	}
 
-    cursor: pointer;
-}
 
+	/** HEADER **/
+	header {
+	  background-color: rgba(177, 195, 180);
 
-html, body {
-    padding: 0;
-    margin: 0;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
 
-}
+	  padding-right: 30px;
+	}
 
-ul{
-  margin:0;
-  padding:0;
-}
 
-li{
-  margin:0;
-  text-align: left;
-  padding:0;
-}
+	h3 {
+	  font-size: 25px;
+	  text-align: center;
+	  border: 1px solid lightgrey;
+	}
+	h4 {
+	  font-size: 20px;
+	  text-align: left;
+	}
+	h5 {
+	  font-size: 20px;
+	  text-align: left;
+	}
 
 
-html {
-    font-family: sans-serif;
-    font-size: 11pt;
+	header a{
+	  color:#ad3429;
+	  text-decoration:none;
+	  text-transform: uppercase;
+	  font-size:16px;
 
-}
 
-header, footer {
-  text-align: right;
-    padding: 0.5rem;
 
-}
-.box{
-  width:90%;
-  margin:auto;
-  overflow:hidden;
 
-}
+	}
 
-/** HEADER **/
-header {
-  background-color: rgba(177, 195, 180);
 
-  padding-right: 30px;
-}
+	header li{
 
-h3 {
-  font-size: 25px;
-  text-align: center;
-  border: 1px solid lightgrey;
-}
-h4 {
-  font-size: 20px;
-  text-align: left;
-}
-h5 {
-  font-size: 20px;
-  text-align: left;
-}
 
-header a{
-  color:#ad3429;
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:16px;
+	  display:inline;
+	  padding: 0 20px 0 20px;
 
 
-}
 
-header li{
 
-  display:inline;
-  padding: 0 20px 0 20px;
+	}
 
 
-}
 
 
 
 
 
-header .highlight, header .current a{
-  color:#ad3429;
-  font-weight:bold;
 
-}
 
-header a:hover{
-  color:#FF0000;
-  font-weight:bold;
 
-}
+	header .highlight, header .current a{
+	  color:#ad3429;
+	  font-weight:bold;
 
 
+	}
 
 
-#boxes{
-  margin-top:40px;
-  float: left;
-  text-align: center;
+	header a:hover{
+	  color:#FF0000;
+	  font-weight:bold;
 
 
+	}
 
 
+	ul{
+	  text-align: left;
 
-}
 
-#boxes .box{
-  float:left;
-  width:20px
-  padding:10px;
-  align-items: flex-start;
-}
 
-#boxes .box img{
-  width:80%;
-  height: 20%;
-  margin-top: 40px;
-  border: 1px solid lightgrey;
-}
 
-#logotext {
-  padding-top: 20px;
-  font-size: 40pt;
-  color: white;
-}
+	}
 
 
-#auswahl{
-  float: left;
-}
 
-#beschreibung{
-  font-size: 15pt;
 
-  text-align: left;
 
-}
 
-#nameEingeben {
-  float
-}
+	#boxes{
+	  margin-top:40px;
+	  float: left;
+	  text-align: center;
 
-/* Main-Teil */
- main {
-    padding: 0.5rem;
-}
+
+
+
+
+
+
+
+
+
+	}
+
+
+	#boxes .box{
+	  float:left;
+	  width:20px
+	  padding:10px;
+	  align-items: flex-start;
+	}
+
+
+	#boxes .box img{
+	  width:80%;
+	  height: 20%;
+	  margin-top: 40px;
+	  border: 1px solid lightgrey;
+	}
+
+
+	#logotext {
+	  padding-top: 20px;
+	  font-size: 40pt;
+	  color: white;
+	}
+
+
+
+
+	#auswahl{
+	  float: left;
+	}
+
+
+	#beschreibung{
+	  font-size: 15pt;
+
+
+	  text-align: left;
+
+
+	}
+
+
+
+
+
+
+	/* Main-Teil */
+	main {
+	  text-align: right;
+	}
+
+
+	main .box {
+	    float: right;
+	    box-sizing: border-box;
+	    max-height: calc(50% - 0.2em);
+	    min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
+	    flex-grow: 1;
+	    flex-shrink: 0;
+	    flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
+	    max-width: calc(90% - 0.2em);   /* 0.2em = 2x margin */
+
+
+	    padding: 0.75em;
+	    border: 1px solid lightgrey;
+	    margin: 0.1em;
+	    background-color: #f6f6f6;
+	    margin-bottom: 40px;
+	}
+
+
+	/* Fußzeile */
+	footer button {
+	    display: block;
+	    width: 30%;
+	    padding: 0.5em;
+	    margin-bottom: 0.5em;
+
+
+	    background-color: #FFFFFF;
+	    color: white;
+	    font-weight: bold;
+	2
+	    border: 0;
+	    border-radius: 0.25em;
+	}
+
+
+	footer button:hover {
+	    background-color: rgba(177, 195, 180);
+	    cursor: pointer;
+	}
+
+
+
+
+	@media (min-width: 900px) {
+	    html {
+	        font-size: 12pt;
+	    }
+
+
+	    main .box {
+	        flex-basis: calc(50% - 0.3em);
+	        max-width: calc(50% - 0.3em);
+	}
+
+
+
+
+	}
+
+
+	@media (min-width: 1500px) {
+	    html {
+	        font-size: 14pt;
+	    }
+	    main .box {
+	        flex-basis: calc(25% - 0.3em);
+	        max-width: calc(25% - 0.3em);
+	}
+
+
+	    footer {
+	        display: flex;
+	    }
+
+
+	    footer button {
+	        flex: 1;
+	        margin-right: 0.5em;
+	    }
+
+
+	    footer button:last-child {
+
+
+	        margin-right: 0;
+	    }
+	    .missingGetraenk {
+	      margin-right: 0.5em;
+	      max-width: 20%
+	    }
+	    .buttonserie {
+	      flex: 1;
+	      margin-right: 0.5em;
+	      max-width: 30%
+	    }
 
 #begrüßung{
   text-align: center;
@@ -212,217 +308,96 @@ main .radioBt{
 
 main .box {
 
-    box-sizing: border-box;
-    max-height: calc(50% - 0.2em);
-     min-height:900px;      /*padding und border nicht zur Größe hinzuaddieren */
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
-    max-width: calc(90% - 0.2em);    /*0.2em = 2x margin*/
-
-    padding: 0.75em;
-    border: 1px solid lightgrey;
-    margin: 0.1em;
-    background-color: #f6f6f6;
-    margin-bottom: 40px;
-}
-
-/* Fußzeile */
-footer button {
-    display: block;
-    width: 30%;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-
-    background-color: #FFFFFF;
-    color: white;
-    font-weight: bold;
-    border: 0;
-    border-radius: 0.25em;
-}
-
-footer button:hover {
-    background-color: rgba(177, 195, 180);
-    cursor: pointer;
-}
-
-@media (min-width: 800px) {
-    html {
-        font-size: 10pt;
-    }
-
-    main .box {
-        flex-basis: calc(90% - 0.3em);
-        max-width: calc(90% - 0.3em);
-    }
-}
-
-@media (min-width: 900px) {
-    html {
-        font-size: 12pt;
-    }
-
-    main .box {
-        flex-basis: calc(50% - 0.3em);
-        max-width: calc(50% - 0.3em);
-}
-
-
-}
-
-@media (min-width: 1500px) {
-    html {
-        font-size: 14pt;
-    }
-    main .box {
-        flex-basis: calc(25% - 0.3em);
-        max-width: calc(25% - 0.3em);
-}
-
-    footer {
-        display: flex;
-    }
-
-    footer button {
-        flex: 1;
-        margin-right: 0.5em;
-    }
-
-    footer button:last-child {
-
-        margin-right: 0;
-    }
-    .missingGetraenk {
-      margin-right: 0.5em;
-      max-width: 20%
-    }
-    .buttonserie {
-      flex: 1;
-      margin-right: 0.5em;
-      max-width: 30%
-    }
-
-    .buttonserie:last-child {
-      padding-right: 10em;
-      margin-right: 10em;
-    }
-
-
-}
-
-footer button {
-    display: block;
-    width: 100%;
-    height: 85px;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-
-    background-color: #000000;
-    color: white;
-    font-weight: bold;
-
-    border: 0;
-    border-radius: 0.25em;
-
-    font-size: 17pt;
-}
-
-footer button:hover {
-    background-color: rgb(65, 94, 138);
-    cursor: pointer;
-}
-
-
-.missingGetraenk {
-
-input[required] {
-  border-color: red;
-
-
-}
-
- .inputFelder{
-}
-#missingGetraenk {
-  font-size: 20px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  margin-right: 3em;
-  flex: 1;
-}
-
-
- #nameEingeben {
-  display: block;
-  width: 10%;
-  padding-right: 5em;
-}
-
-.missingGetraenk {
-  display: block;
-  width: 100%;
-  height: 85px;
-  text-align: left;
-}
-
-.buttonserie {
-      display: block;
-      width: 10%;
-      padding: 0.5em;
-      margin-bottom: 0.5em;
-      background-color: #FFFFFF;
-      font-weight: bold;
-      border: 0;
-      border-radius: 0.25em;
-      border-style: dotted;
-
-}
-
-.buttonserie {
-      display: block;
-      width: 100%;
-      height: 85px;
-      padding: 0.5em;
-      margin-bottom: 0.5em;
-      background-color: #FFFFFF;
-      font-weight: bold;
-
-#beschreibungEingeben {
-  display: block;
-  width: 10%;
-  height: 85px;
-  padding: 0.5em;
-  margin-right: 0.5em;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-weight: bold;
-
-  border: solid;
-  border-radius: 0.25em;
-
-  font-size: 13pt;
+	    .buttonserie:last-child {
+	      padding-right: 10em;
+	      margin-right: 10em;
+	    }
 
 
 
 
-
-      border: 0;
-      border-radius: 0.25em;
-      border-style: dotted;
-      font-size: 13pt;
-      font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
+	}
 
 
- ::-webkit-input-placeholder {
+	footer button {
+	    display: block;
+	    width: 100%;
+	    height: 85px;
+	    padding: 0.5em;
+	    margin-bottom: 0.5em;
 
-}
-::-webkit-input-placeholder {
 
-  color: #000000;
-  text-align: center;
-  align-items: center;
-}
+	    background-color: #000000;
+	    color: white;
+	    font-weight: bold;
 
- /* #missingGetraenk{
-   display: block;
 
-}  */
+	    border: 0;
+	    border-radius: 0.25em;
+
+
+	    font-size: 17pt;
+	}
+
+
+	footer button:hover {
+	    background-color: rgb(65, 94, 138);
+	    cursor: pointer;
+	}
+
+
+	.missingGetraenk {
+	  display: block;
+	  width: 10%;
+	  padding-right: 5em;
+	}
+
+
+	.missingGetraenk {
+	  display: block;
+	  width: 100%;
+	  height: 85px;
+	  text-align: left;
+	}
+
+
+	.buttonserie {
+	      display: block;
+	      width: 10%;
+	      padding: 0.5em;
+	      margin-bottom: 0.5em;
+	      background-color: #FFFFFF;
+	      font-weight: bold;
+	  2
+	      border: 0;
+	      border-radius: 0.25em;
+	      border-style: dotted;
+
+
+	}
+
+
+	.buttonserie {
+	      display: block;
+	      width: 100%;
+	      height: 85px;
+	      padding: 0.5em;
+	      margin-bottom: 0.5em;
+	      background-color: #FFFFFF;
+	      font-weight: bold;
+
+
+	      border: 0;
+	      border-radius: 0.25em;
+	      border-style: dotted;
+	      font-size: 13pt;
+	      font-family: "Trebuchet MS", Helvetica, sans-serif;
+	}
+
+
+	}
+	::-webkit-input-placeholder {
+	  color: #000000;
+	  text-align: center;
+	  align-items: center;
+	}
