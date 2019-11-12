@@ -112,7 +112,7 @@
           <div class="box">
             <img src="bilder/BierBild.png">
             <h3>Bier</h3>
-            <h4>Menge: <input id="bier_menge_id" type="number" value="0" readonly= "readonly" </input> (in Liter)</h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
+            <h4>Menge: <input id="bier_menge_id" type="number" value="0" </input> (in Liter)</h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
               <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt,
                 etwa
                 Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
@@ -246,7 +246,10 @@
 
 
     <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
+    <button id="testFall" onclick="ausgeben()"> Test</button>
     <script>
+
+
       function addDrink() {
 
 
@@ -311,13 +314,29 @@
         //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
         let DrinkBox = document.getElementById('DrinkBox');
         DrinkBox.appendChild(newElement1)
+
+
+
       }
     </script>
     <script>
+
       function aufsummieren(id, wert) {
         var _ergebnis = Number(id.value) + Number(wert);
         id.value = _ergebnis;
       }
+
+    /*    var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'),
+                              document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')]; */
+
+      function ausgeben(){
+
+        let i;
+        for(i=0; i < GetraenkeListe.length; i++){
+          alert(GetraenkeListe[i].value);
+        }
+      }
+
     </script>
 
 
