@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
 
+
 function addDrink(name, menge, alkgehalt, beschreibung) {
   var _name = name;
   var _menge = menge;

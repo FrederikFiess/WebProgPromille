@@ -1,11 +1,3 @@
-"use strict";
-
-/**
- * Klasse PageEdit: Stellt die Seite mit dem Eingabeformular zur Verfügung.
- *
- * Diese Klasse wird von der App-Klasse zu bestimmten Zeitpunkten instantiiert
- * und aufgerufen, um die Liste mit den Adressen darzustellen.
- */
 class PageEdit {
     /**
      * Konstruktor.
@@ -26,7 +18,7 @@ class PageEdit {
         this._dataset = {
             name: "",
             menge: "",
-            alkoholgehalt: "",
+            alkohol: "",
             beschreibung: "",
         };
 
@@ -35,7 +27,7 @@ class PageEdit {
 
             this._dataset.name = dataset.name;
             this._dataset.menge = dataset.menge;
-            this._dataset.alkoholgehalt = dataset.alkoholgehalt;
+            this._dataset.alkohol = dataset.alkohol;
             this._dataset.beschreibung = dataset.beschreibung;
         }
     }
@@ -65,10 +57,10 @@ class PageEdit {
         // Formularfelder einfügen
         let template = document.getElementById("template-page-edit").innerHTML;
         this._mainElement.innerHTML = template;
-        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("$GETRAENK_NAME$", this._dataset.name);
-        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("MENGE", this._dataset.menge);
-        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("ALKOHOLGEHALT", this._dataset.alkoholgehalt);
-        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("BESCHREIBUNG", this._dataset.beschreibung);
+        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("$Name$", this._dataset.name);
+        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("$Menge$", this._dataset.menge);
+        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("$Alkohol$", this._dataset.alkohol);
+        this._mainElement.innerHTML = this._mainElement.innerHTML.replace("$Beschreibung$", this._dataset.beschreibung);
 
         let saveButton = this._mainElement.querySelector(".action.save");
         saveButton.addEventListener("click", () => this._saveAndExit());
@@ -80,31 +72,26 @@ class PageEdit {
      */
     _saveAndExit() {
         // Eingegebene Werte überprüfen
-        let name = document.querySelector("#main-page-edit .name").value.trim();
-        let menge = document.querySelector("#main-page-edit .menge").value.trim();
-        let alkoholgehalt = document.querySelector("#main-page-edit .alkoholgehalt").value.trim();
-        let beschreibung = document.querySelector("#main-page-edit .beschreibung").value.trim();
+        let firstName = document.querySelector("#main-page-edit .name").value.trim();
+        let lastName = document.querySelector("#main-page-edit .menge").value.trim();
+        let phone = document.querySelector("#main-page-edit .alkohol").value.trim();
+        let email = document.querySelector("#main-page-edit .beschreibung").value.trim();
 
-        if (name === "") {
-            alert("Geben Sie erst einen Namen für das Getränk ein.");
+        if (firstName === "") {
+            alert("Geben Sie den Namen des Getränks ein.");
             return;
         }
 
-        if (menge === "") {
-            alert("Geben Sie erst eine Menge ein.");
-            return;
-        }
-
-        if (alkoholgehalt === "") {
-            alert("Geben Sie erst einen Alkoholgehalt ein.");
+        if (lastName === "") {
+            alert("Geben Sie die Menge des Getränks ein.");
             return;
         }
 
         // Datensatz speichern
-        this._dataset.name = name;
-        this._dataset.menge = menge;
-        this._dataset.alkoholgehalt = alkoholgehalt;
-        this._dataset.beschreibung = beschreibung;
+        this._dataset.name = firstName;
+        this._dataset.menge = lastName;
+        this._dataset.alkohol = phone;
+        this._dataset.beschreibung = email;
 
         if (this._editIndex > -1) {
             this._app.updateDataByIndex(this._editIndex, this._dataset);

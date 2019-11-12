@@ -1,6 +1,64 @@
 html, body {
     padding: 0;
     margin: 0;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 40em) {
+    html {
+
+        font-size: 11pt;
+    }
+
+
+}
+
+/* NAVIGATION */
+nav {
+
+
+    border: 0px solid #202020;
+    border-bottom-width: 3px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -3px;
+
+    display: flex;
+}
+
+nav li {
+    padding: 1em;
+    margin: 0;
+}
+
+nav li.active {
+
+    border: 0px solid rgb(33, 146, 187);
+    border-bottom-width: 3px;
+}
+
+nav li:hover {
+
+
+    border: 0px solid rgb(103, 197, 231);
+    border-bottom-width: 3px;
+
+    cursor: pointer;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 
 }
@@ -145,7 +203,7 @@ ul{
 }
 
 /* Main-Teil */
-main {
+ main {
     padding: 0.5rem;
 }
 
@@ -153,11 +211,11 @@ main .box {
 
     box-sizing: border-box;
     max-height: calc(50% - 0.2em);
-    min-height:900px;      /* padding und border nicht zur Größe hinzuaddieren */
+     min-height:900px;      /*padding und border nicht zur Größe hinzuaddieren */
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: calc(90% - 0.2em);  /* 0.2em = 2x margin */
-    max-width: calc(90% - 0.2em);   /* 0.2em = 2x margin */
+    max-width: calc(90% - 0.2em);    /*0.2em = 2x margin*/
 
     padding: 0.75em;
     border: 1px solid lightgrey;
@@ -176,7 +234,6 @@ footer button {
     background-color: #FFFFFF;
     color: white;
     font-weight: bold;
-2
     border: 0;
     border-radius: 0.25em;
 }
@@ -292,10 +349,6 @@ input[required] {
 
 
  #nameEingeben {
-
-#nameEingeben {
->>>>>>> 3920b6354cee6ff0255ae38b2713a9a72d852955
->>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
   display: block;
   width: 10%;
   padding-right: 5em;
@@ -315,7 +368,6 @@ input[required] {
       margin-bottom: 0.5em;
       background-color: #FFFFFF;
       font-weight: bold;
-  2
       border: 0;
       border-radius: 0.25em;
       border-style: dotted;
@@ -361,7 +413,7 @@ input[required] {
 
 }
 ::-webkit-input-placeholder {
->>>>>>> d7a13f7249425e4e19d22143879f628cf7e4f01c
+
   color: #000000;
   text-align: center;
   align-items: center;
@@ -370,4 +422,4 @@ input[required] {
  /* #missingGetraenk{
    display: block;
 
-} */
+}  */

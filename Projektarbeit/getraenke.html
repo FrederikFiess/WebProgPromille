@@ -6,13 +6,57 @@
   <title>🥂 Online-Promillerechner</title>
   <link rel="stylesheet" href="getraenkeStyle.css" />
   <script src="getraenkeJS.js"></script>
+  <!-- <script src="page-list.js"></script>
+  <link rel="stylesheet" href="page-list.css" />
+  <script src="page-edit.js"></script>
+  <link rel="stylesheet" href="page-edit.css" />
+
+  <script>
+    window.addEventListener("load", () => {
+      let pages = [{
+          name: "page-list", // Name zum Aufrufen der Seite
+          klass: PageList, // Klasse, die die Seite bereitstellt
+          label: "Getränke-Übersicht", // Bezeichnung der Seite
+          hidden: false, // Seite kann im Menü ausgewählt werden
+        },
+        {
+          name: "page-new",
+          klass: PageEdit,
+          label: "Getränk hinzufügen",
+          hidden: false, // Seite kann im Menü ausgewählt werden
+        },
+        {
+          name: "page-edit",
+          klass: PageEdit,
+          label: "Getränk bearbeiten",
+          hidden: true, // Seite kann im Menü NICHT ausgewählt werden
+        },
+      ];
+
+      let app = new App(pages);
+      app.showPage("page-list");
+    });
+  </script> -->
+
 </head>
+<html>
+<!-- <nav id="app-menu">
+  <ul></ul>
+</nav>
+
+<template id="template-app-menu-li">
+  <li data-page-name="$NAME$">
+    <a>$LABEL$</a>
+  </li>
+</template> -->
 
 <body>
   <header>
     <div class="container">
       <p id="logotext">
         <strong>Online-Promillerechner</strong>
+
+
         <section id="navigation">
           <nav>
             <ul>
@@ -108,8 +152,8 @@
 
 
 
-    <!-- <button onclick="addDrink()" id="weiteresGetraenk">Weiteres Getränk hinzufügen</button> -->
-    <!-- <form name="form1" onsubmit="pruefen()">
+  <!-- <button onclick="addDrink()" id="weiteresGetraenk">Weiteres Getränk hinzufügen</button> -->
+  <!-- <form name="form1" onsubmit="pruefen()">
       <span class="inputFelder">
         <input id="nameEingeben" placeholder="Name des Getränks" required="required"></input>
         <input id="mengeEingeben" placeholder="Menge des Getränks" required="required"></input>
@@ -125,8 +169,8 @@
 
 
 
-    <footer>
-      <div id="missingGetraenk">
+  <footer>
+  
 
 
       <div class="missingGetraenk" id="missingGetraenk">
@@ -135,91 +179,86 @@
 
 
 
-      <input class="buttonserie" id="nameEingeben" placeholder="Name eingeben" </input>
-      <input class="buttonserie" id="mengeEingeben" placeholder="Menge eingeben" </input>
-      <input class="buttonserie" id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben"</input>
-      <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben"</input>
-
-      <!-- <input id="nameEingeben" placeholder="Name eingeben" </input>
-      <input id="mengeEingeben" placeholder="Menge eingeben" </input>
-      <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben"</input>
-      <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben"</input> -->
+      <input class="buttonserie" id="nameEingeben" placeholder="Name eingeben" </input> <input class="buttonserie" id="mengeEingeben" placeholder="Menge eingeben" </input> <input class="buttonserie" id="alkoholGehaltEingeben"
+        placeholder="Alkoholgehalt eingeben" </input> <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben" </input> <!-- <input id="nameEingeben" placeholder="Name eingeben" </input> <input id="mengeEingeben"
+        placeholder="Menge eingeben" </input> <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben" </input> <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben" </input> -->
 
 
-<button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
+      <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
       <script>
         function addDrink() {
 
 
-        //den Wert der Eingaben in Variablen speichern
-        var _name = document.getElementById('nameEingeben').value;
-        var _menge = document.getElementById('mengeEingeben').value;
-        var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
-        var _beschreibung = document.getElementById('beschreibungEingeben').value;
+          //den Wert der Eingaben in Variablen speichern
+          var _name = document.getElementById('nameEingeben').value;
+          var _menge = document.getElementById('mengeEingeben').value;
+          var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
+          var _beschreibung = document.getElementById('beschreibungEingeben').value;
 
-        // function pruefen() {
-        //   if (_name.value == '') {
-        //     alert("Bitte den Getränkenamen eingeben!");
-        //   }
-        // else  if (_menge.value == '') {
-        //     alert("Bitte die Menge eingeben!");
-        //   }
-        // else  if (a._alkgehalt.value == '') {
-        //     alert("Bitte den Alkoholgehalt eingeben!");
-        //   } else
-            //die einzelnen Elemente erzeuegn
-            let newElement1 = document.createElement('div');
-            let newElement2 = document.createElement('img');
-            let newElement3 = document.createElement('h3');
-            let newElement4 = document.createElement('p');
-            let newElement5 = document.createElement('h4');
-            let newElement6 = document.createElement('p');
-            let newElement7 = document.createElement('h5');
-            let newElement8 = document.createElement('p');
+          // function pruefen() {
+          //   if (_name.value == '') {
+          //     alert("Bitte den Getränkenamen eingeben!");
+          //   }
+          // else  if (_menge.value == '') {
+          //     alert("Bitte die Menge eingeben!");
+          //   }
+          // else  if (a._alkgehalt.value == '') {
+          //     alert("Bitte den Alkoholgehalt eingeben!");
+          //   } else
+          //die einzelnen Elemente erzeuegn
+          let newElement1 = document.createElement('div');
+          let newElement2 = document.createElement('img');
+          let newElement3 = document.createElement('h3');
+          let newElement4 = document.createElement('p');
+          let newElement5 = document.createElement('h4');
+          let newElement6 = document.createElement('p');
+          let newElement7 = document.createElement('h5');
+          let newElement8 = document.createElement('p');
 
-            //die src von img setze
-            newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
+          //die src von img setze
+          newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
 
-            //die einzelnen Elemente aneinander anhängen und verschachteln
-            newElement1.appendChild(newElement2);
-            newElement1.appendChild(newElement3);
-            newElement1.appendChild(newElement4);
-            newElement4.appendChild(newElement5);
-            newElement1.appendChild(newElement6);
-            newElement6.appendChild(newElement7);
-            newElement1.appendChild(newElement8);
-
-
+          //die einzelnen Elemente aneinander anhängen und verschachteln
+          newElement1.appendChild(newElement2);
+          newElement1.appendChild(newElement3);
+          newElement1.appendChild(newElement4);
+          newElement4.appendChild(newElement5);
+          newElement1.appendChild(newElement6);
+          newElement6.appendChild(newElement7);
+          newElement1.appendChild(newElement8);
 
 
 
 
-            //den Elementen die benötigten id, bzw. class zuweisen
-            newElement1.className = "box";
-            newElement8.idName = "beschreibung";
-            newElement2.idName = "universalBild";
+
+
+          //den Elementen die benötigten id, bzw. class zuweisen
+          newElement1.className = "box";
+          newElement8.idName = "beschreibung";
+          newElement2.idName = "universalBild";
 
 
 
-            //bestimmte Elemente mit Text füllen
-            newElement3.textContent = _name;
-            newElement5.textContent = 'Menge: ' + _menge;
-            newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
-            newElement8.textContent = _beschreibung;
+          //bestimmte Elemente mit Text füllen
+          newElement3.textContent = _name;
+          newElement5.textContent = 'Menge: ' + _menge;
+          newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
+          newElement8.textContent = _beschreibung;
 
 
 
-            //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
-            let DrinkBox = document.getElementById('DrinkBox');
-            DrinkBox.appendChild(newElement1)
+          //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
+          let DrinkBox = document.getElementById('DrinkBox');
+          DrinkBox.appendChild(newElement1)
 
 
         }
-
-    </script>
+      </script>
 
   </footer>
 
 </body>
+
+</html>
 
 </html>
