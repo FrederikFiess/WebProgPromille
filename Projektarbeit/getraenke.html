@@ -249,7 +249,7 @@
     <button id="testFall" onclick="ausgeben()"> Test</button>
     <script>
 
-
+      var helpName;
       function addDrink() {
 
 
@@ -315,8 +315,8 @@
         let DrinkBox = document.getElementById('DrinkBox');
         DrinkBox.appendChild(newElement1)
 
-
-
+        this.helpName = document.getElementById('nameEingeben').value;
+        GetraenkeListe.push(helpName);
       }
     </script>
     <script>
@@ -326,8 +326,8 @@
         id.value = _ergebnis;
       }
 
-    /*    var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'),
-                              document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')]; */
+      var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'),
+                              document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')];
 
       function ausgeben(){
 
