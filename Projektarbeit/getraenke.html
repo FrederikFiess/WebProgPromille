@@ -112,7 +112,7 @@
           <div class="box">
             <img src="bilder/BierBild.png">
             <h3>Bier</h3>
-            <h4>Menge: <input id="bier_menge_id" type="number" value="0" </input> (in Liter)</h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
+            <h4>Menge: <input id="bier_menge_id" type="number" value="0" readonly= "readonly"</input> (in Liter)</h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
               <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt,
                 etwa
                 Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
@@ -249,9 +249,9 @@
     <button id="testFall" onclick="ausgeben()"> Test</button>
     <script>
 
+      var GetraenkeListe = ['bier_menge_id', 'wein_menge_id', 'likör_menge_id', 'schnaps_menge_id', 'wodka_menge_id', 'whisky_menge_id'];
 
       function addDrink() {
-
 
         //den Wert der Eingaben in Variablen speichern
         var _name = document.getElementById('nameEingeben').value;
@@ -259,63 +259,55 @@
         var _alkgehalt = document.getElementById('alkoholGehaltEingeben').value;
         var _beschreibung = document.getElementById('beschreibungEingeben').value;
 
-        // function pruefen() {
-        //   if (_name.value == '') {
-        //     alert("Bitte den Getränkenamen eingeben!");
-        //   }
-        // else  if (_menge.value == '') {
-        //     alert("Bitte die Menge eingeben!");
-        //   }
-        // else  if (a._alkgehalt.value == '') {
-        //     alert("Bitte den Alkoholgehalt eingeben!");
-        //   } else
-        //die einzelnen Elemente erzeuegn
         let newElement1 = document.createElement('div');
         let newElement2 = document.createElement('img');
         let newElement3 = document.createElement('h3');
         let newElement4 = document.createElement('p');
         let newElement5 = document.createElement('h4');
+        let node = document.createElement("input");
         let newElement6 = document.createElement('p');
         let newElement7 = document.createElement('h5');
         let newElement8 = document.createElement('p');
 
+
         //die src von img setze
         newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
+
+
+        //id="whisky_menge_id" type="number" value="0" readonly= "readonly"
 
         //die einzelnen Elemente aneinander anhängen und verschachteln
         newElement1.appendChild(newElement2);
         newElement1.appendChild(newElement3);
         newElement1.appendChild(newElement4);
         newElement4.appendChild(newElement5);
+        newElement5.appendChild(node);
         newElement1.appendChild(newElement6);
         newElement6.appendChild(newElement7);
         newElement1.appendChild(newElement8);
-
-
-
-
-
 
         //den Elementen die benötigten id, bzw. class zuweisen
         newElement1.className = "box";
         newElement8.idName = "beschreibung";
         newElement2.idName = "universalBild";
 
-
-
         //bestimmte Elemente mit Text füllen
         newElement3.textContent = _name;
-        newElement5.textContent = 'Menge: ' + _menge;
+        newElement5.textContent = 'Menge: ';
         newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
         newElement8.textContent = _beschreibung;
-
-
+        node.setAttribute("id", "NeuesGetraenk"+_name);
+        node.setAttribute('type', 'number');
+        node.setAttribute('value', _menge);
+        node.setAttribute('readonly', 'readonly');
 
         //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
         let DrinkBox = document.getElementById('DrinkBox');
         DrinkBox.appendChild(newElement1)
 
 
+
+        GetraenkeListe.push(document.getElementById(help));
 
       }
     </script>
@@ -326,14 +318,13 @@
         id.value = _ergebnis;
       }
 
-    /*    var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'),
-                              document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')]; */
+
 
       function ausgeben(){
 
         let i;
         for(i=0; i < GetraenkeListe.length; i++){
-          alert(GetraenkeListe[i].value);
+          alert(document.getElementById(GetraenkeListe[i]).value);
         }
       }
 
