@@ -39,8 +39,8 @@
     <p id="begrüßung"> <strong> Bitte wählen Sie im folgenden Ihr Geschlecht, Ihre Größe und Ihr Gewicht aus </strong>
       <div class="radioBt">
         <b> Sie sind: </b>
-        <input type="radio" name="geschlecht" value="Männlich" id="mann_id"> Männlich
-        <input type="radio" name="geschlecht" value="Weiblich" id="frau_id"> Weiblich
+        <input type="radio" name="geschlecht" value="" id="mann_id"> Männlich
+        <input type="radio" name="geschlecht" value="" id="frau_id"> Weiblich
       </div>
       <br>
       </br>
@@ -262,14 +262,13 @@
         newElement2.setAttribute('id', 'universalBild');
         newElement9.setAttribute('id', 'NeuesGetraenk_'+_name);
         newElement9.setAttribute('type', 'number');
-        newElement9.setAttribute('value', ""+_menge);
+        newElement9.setAttribute('value', _menge);
         newElement9.setAttribute('readonly', 'readonly');
 
 
         //bestimmte Elemente mit Text füllen
         newElement3.textContent = _name;
         newElement10.textContent = 'Menge: '
-        //newElement5.innerHTML = 'Menge: ';
         newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
         newElement8.textContent = _beschreibung;
 
@@ -298,6 +297,7 @@
         for(i=0; i < GetraenkeListe.length; i++){
           alert((GetraenkeListe[i]).value);
         }
+        berechneAufgenommeneMenge();
       }
 
       function berechneAufgenommeneMenge(){

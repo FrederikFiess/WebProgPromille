@@ -62,20 +62,21 @@ window.addEventListener("load", () => {
     let aufgenommeneMenge;
     let ergebnis;
 
-    if (geschlechtFrau == "Weiblich") {
+    if (document.getElementById('frau_id').checked) {
       console.log("geklickt");
 
-      rechneReduktionFrau = (1.055 * (-2.097 + 0.1069 * outputHöhe + 0.2466 * outputGewicht) / 0.8 * outputGewicht);
+      rechneReduktionFrau = Number((1.055 * (-2.097 + 0.1069 * Number(hoehe.value) + 0.2466 * Number(gewicht.value)) / 0.8 * Number(gewicht.value)));
 
       if (Number(bierMenge.value) != 0 || Number(weinMenge.value) != 0 || Number(likörMenge.value) != 0 || Number(schnapsMenge.value) != 0 || Number(whiskyMenge.value) != 0 || Number(wodkaMenge.value) != 0) {
-        aufgenommeneMenge = bierMenge.value * bierAlkohol.value + weinMenge.value * weinAlkohol + likörMenge.value * likörAlkohol.value + schnapsMenge.value * schnapsAlkohol + wodkaMenge.value * wodkaAlkohol.value + whiskyMenge.value * whiskyAlkohol.value;
+        aufgenommeneMenge = Number(bierMenge.value) * Number(bierAlkohol.value) + Number(weinMenge.value) * Number(weinAlkohol.value) + Number(likörMenge.value) * Number(likörAlkohol.value) + Number(schnapsMenge.value) * Number(schnapsAlkohol.value) + Number(wodkaMenge.value) * Number(wodkaAlkohol.value) + Number(whiskyMenge.value) * Number(whiskyAlkohol.value);
 
       }
-      ergebnis = aufgenommeneMenge / (outputGewicht * rechneReduktionFrau);
-      console.log("Dein Promillewert " + ergebnis);
+      ergebnis = Number(aufgenommeneMenge) / Number(Number(gewicht.value) * rechneReduktionFrau);
+      ergebnis2 = Number(ergebnis);
+      console.log("Dein Promillewert " + ergebnis2);
 
 
-    } else if (geschlechtMann == "Männlich") {
+    } else if (document.getElementById('mann_id').checked) {
       rechneReduktionMann = (1.055 * (2.447 - 0.09516 * outputAlter + 0.1074 * outputHöhe + 0.3362 * outputGewicht) / 0.8 * outputGewicht);
       aufgenommeneMenge = bierMenge.value + weinMenge.value + likörMenge.value + schnapsMenge.value + whiskyMenge.value + wodkaMenge.value
 
@@ -89,7 +90,7 @@ window.addEventListener("load", () => {
 
 
     } else {
-      alert("Bitte geben Sie ihr Geschlecht, Körpergröße, Gewicht, Alter ein und füllen Sie die Eingabefelder");
+      alert("Bitte geben Sie ihr Geschlecht, Körpergröße, Gewicht und Alter ein.");
     }
 
     return ergebnisText.value = ergebnis;
