@@ -91,8 +91,8 @@
                 Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
 
               <h6>Eingabe der getrunkenen Menge: </h5>
-                <button id="kleinesBier" onclick="aufsummieren(bier_menge_id, kleinesBier.value)" value="0.33">Kleines Bier 0,33l </button>
-                <button id="großesBier" onclick="aufsummieren(bier_menge_id, großesBier.value)" value="0.5">Großes Bier 0,5l</button>
+                <button id="kleinesBier" class="buttonMenge" onclick="aufsummieren(bier_menge_id, kleinesBier.value)" value="0.33">Kleines Bier 0,33l </button>
+                <button id="großesBier" class="buttonMenge" onclick="aufsummieren(bier_menge_id, großesBier.value)" value="0.5">Großes Bier 0,5l</button>
 
           </div>
 
@@ -109,10 +109,10 @@
               Reifeprozessen, die sehr vielfältig sein können und auch dazu führen, dass manche Weine jahrzehntelang reifen und haltbar sind. (Quelle: wikipedia)</p>
 
             <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="PiccoloWein" onclick="aufsummieren(wein_menge_id, PiccoloWein.value)" value="0.2">Piccolo Wein 0,2l</button>
-              <button id="Wein" onclick="aufsummieren(wein_menge_id, Wein.value)" value="0.375">Wein 0,375l</button>
-              <button id="HalbWein" onclick="aufsummieren(wein_menge_id, HalbWein.value)" value="0.5">Wein 0,5l </button>
-              <button id="FlascheWein" onclick="aufsummieren(wein_menge_id, FlascheWein.value)" value="0.7">Flasche Wein 0,7l</button>
+              <button id="PiccoloWein" class="buttonMenge" onclick="aufsummieren(wein_menge_id, PiccoloWein.value)" value="0.2">Piccolo Wein 0,2l</button>
+              <button id="Wein" class="buttonMenge" onclick="aufsummieren(wein_menge_id, Wein.value)" value="0.375">Wein 0,375l</button>
+              <button id="HalbWein" class="buttonMenge" onclick="aufsummieren(wein_menge_id, HalbWein.value)" value="0.5">Wein 0,5l </button>
+              <button id="FlascheWein" class="buttonMenge" onclick="aufsummieren(wein_menge_id, FlascheWein.value)" value="0.7">Flasche Wein 0,7l</button>
 
 
           </div>
@@ -126,9 +126,9 @@
             <p id="beschreibung">Liköre sind aromatische Spirituosen mit relativ hohem Zuckergehalt (mindestens 100 Gramm pro Liter). Der Alkoholgehalt liegt normalerweise bei 15 bis 35 % Vol, es gibt aber auch stärkere und schwächere Liköre, zum
               Beispiel Chartreuse verte mit 55 % Vol oder Aperol mit 11 oder 15 % Vol. (Quelle: wikipedia)</p>
             <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinLikör" onclick="aufsummieren(likör_menge_id, kleinLikör.value)" value="0.02">Kleiner Likör 0,02l</button>
-              <button id="großLikör" onclick="aufsummieren(likör_menge_id, großLikör.value)" value="0.04">Großer Likör 0,04l</button>
-              <button id="halbLikör" onclick="aufsummieren(likör_menge_id, halbLikör.value)" value="0.375">Halbe Flasche Likör 0,375l </button>
+              <button id="kleinLikör" class="buttonMenge"  onclick="aufsummieren(likör_menge_id, kleinLikör.value)" value="0.02">Kleiner Likör 0,02l</button>
+              <button id="großLikör" class="buttonMenge"  onclick="aufsummieren(likör_menge_id, großLikör.value)" value="0.04">Großer Likör 0,04l</button>
+              <button id="halbLikör" class="buttonMenge" onclick="aufsummieren(likör_menge_id, halbLikör.value)" value="0.375">Halbe Flasche Likör 0,375l </button>
           </div>
           <div class="box">
             <img src="bilder/SchnapsBild.png">
@@ -142,9 +142,9 @@
               Basis erfolgt durch Brennen (Destillation) natürlicher, vergorener, pflanzlicher Erzeugnisse. (Quelle: wikipedia)</p>
 
             <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinSchnaps" onclick="aufsummieren(schnaps_menge_id, kleinSchnaps.value)" value="0.02">Kleiner Schnaps 0,02l</button>
-              <button id="großSchnaps" onclick="aufsummieren(schnaps_menge_id, großSchnaps.value)" value="0.04">Großer Schnaps 0,04l</button>
-              <button id="HalbSchnaps" onclick="aufsummieren(schnaps_menge_id, HalbSchnaps.value)" value="0.375">Halbe Flasche Schnaps 0,375l </button>
+              <button id="kleinSchnaps" class="buttonMenge" onclick="aufsummieren(schnaps_menge_id, kleinSchnaps.value)" value="0.02">Kleiner Schnaps 0,02l</button>
+              <button id="großSchnaps" class="buttonMenge" onclick="aufsummieren(schnaps_menge_id, großSchnaps.value)" value="0.04">Großer Schnaps 0,04l</button>
+              <button id="HalbSchnaps" class="buttonMenge" onclick="aufsummieren(schnaps_menge_id, HalbSchnaps.value)" value="0.375">Halbe Flasche Schnaps 0,375l </button>
 
           </div>
           <div class="box">
@@ -158,9 +158,9 @@
               Aromen
               oder anderer fermentierter Stoffe aus. Er wird entweder pur getrunken oder in Cocktails vermischt. (Quelle: wikipedia)</p>
             <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinWodka" onclick="aufsummieren(wodka_menge_id, kleinWodka.value)" value="0.02">Kleiner Wodka 0,02l</button>
-              <button id="großWodka" onclick="aufsummieren(wodka_menge_id, großWodka.value)" value="0.04">Großer Wodka 0,04l</button>
-              <button id="HalbWodka" onclick="aufsummieren(wodka_menge_id, HalbWodka.value)" value="0.375">Halbe Flasche Wodka 0,375l </button>
+              <button id="kleinWodka" class="buttonMenge" onclick="aufsummieren(wodka_menge_id, kleinWodka.value)" value="0.02">Kleiner Wodka 0,02l</button>
+              <button id="großWodka" class="buttonMenge" onclick="aufsummieren(wodka_menge_id, großWodka.value)" value="0.04">Großer Wodka 0,04l</button>
+              <button id="HalbWodka" class="buttonMenge" onclick="aufsummieren(wodka_menge_id, HalbWodka.value)" value="0.375">Halbe Flasche Wodka 0,375l </button>
 
           </div>
           <div class="box">
@@ -173,9 +173,9 @@
             <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>
 
             <h6>Eingabe der getrunkenen Menge: </h5>
-              <button id="kleinWhisky" onclick="aufsummieren(whisky_menge_id, kleinWhisky.value)" value="0.02">Kleiner Whisky 0,02l</button>
-              <button id="großWhisky" onclick="aufsummieren(whisky_menge_id, großWhisky.value)" value="0.04">Großer Whisky 0,04l</button>
-              <button id="HalbWhisky" onclick="aufsummieren(whisky_menge_id, HalbWhisky.value)" value="0.375">Halbe Flasche Whisky 0,375l </button>
+              <button id="kleinWhisky" class="buttonMenge" onclick="aufsummieren(whisky_menge_id, kleinWhisky.value)" value="0.02">Kleiner Whisky 0,02l</button>
+              <button id="großWhisky" class="buttonMenge" onclick="aufsummieren(whisky_menge_id, großWhisky.value)" value="0.04">Großer Whisky 0,04l</button>
+              <button id="HalbWhisky" class="buttonMenge" onclick="aufsummieren(whisky_menge_id, HalbWhisky.value)" value="0.375">Halbe Flasche Whisky 0,375l </button>
           </div>
         </div>
 
