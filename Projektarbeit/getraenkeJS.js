@@ -55,7 +55,6 @@ window.addEventListener("load", () => {
 
   let alkoholMengeGesamt = 0;
   let _promillewert = 0;
-  let _promillewertRichtig = 0;
 
   berechnePromille.addEventListener("click", function() {
 
@@ -77,9 +76,8 @@ window.addEventListener("load", () => {
       }
       console.log("Die alkoholMengeGesamt: " + alkoholMengeGesamt);
 
-      _promillewert = alkoholMengeGesamt / (Number(gewicht.value) * rechneReduktionFrau);
-      _promilleWertRichtig = _promillewert * 1000;
-      console.log("Der Promillewert beträgt: " + _promillewertRichtig);
+      _promillewert = alkoholMengeGesamt / (Number(gewicht.value) * rechneReduktionFrau) * 1000;
+      console.log("Der Promillewert beträgt: " + _promillewert);
 
       //aufgenommeneMenge = Number(bierMenge.value) * Number(bierAlkohol.value)  + Number(weinMenge.value) * Number(weinAlkohol.value) + Number(likörMenge.value) * Number(likörAlkohol.value) + Number(schnapsMenge.value) * Number(schnapsAlkohol.value) + Number(wodkaMenge.value) * Number(wodkaAlkohol.value) + Number(whiskyMenge.value) * Number(whiskyAlkohol.value);
 
