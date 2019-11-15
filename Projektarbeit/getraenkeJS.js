@@ -55,6 +55,7 @@ window.addEventListener("load", () => {
 
   let alkoholMengeGesamt = 0;
   let _promillewert = 0;
+  let _promillewertRichtig = 0;
 
   berechnePromille.addEventListener("click", function() {
 
