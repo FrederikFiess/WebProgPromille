@@ -219,7 +219,7 @@
 
 
     <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
-    <button id="testFall" onclick="ausgeben()"> Test</button>
+    <button id="testFall" onclick="berechneAufgenommeneMenge()"> Test</button>
     <script>
 
 
@@ -278,7 +278,10 @@
         DrinkBox.appendChild(newElement1)
 
         help = 'NeuesGetraenk_'+_name;
-        GetraenkeListe.push(document.getElementById(help));
+        menge_GetraenkeListe.push(document.getElementById(help));
+
+        help2 = Number(_alkgehalt);
+        alkohol_GetraenkeListe.push(help2);
 
       }
     </script>
@@ -287,27 +290,41 @@
       function aufsummieren(id, wert) {
         var _ergebnis = Number(id.value) + Number(wert);
         id.value = _ergebnis;
+        //alert(_ergebnis);
       }
 
-      var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'), document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')];
+      var menge_GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'), document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')];
+      var alkohol_GetraenkeListe = [5.5, 12.5, 30, 40, 45, 43];
+      var aufgenommeneMengeArray = [0];
 
       function ausgeben(){
 
         let i;
-        for(i=0; i < GetraenkeListe.length; i++){
+        for(i=0; i < menge_GetraenkeListe.length; i++){
           alert((GetraenkeListe[i]).value);
         }
         berechneAufgenommeneMenge();
       }
 
       function berechneAufgenommeneMenge(){
-        let i;
-        aufgenommeneMenge = Number(0);
+        // let i;
+        //aufgenommeneMenge = Number(0);
 
-        for(i=0; i < GetraenkeListe.length; i++){
-          aufgenommeneMenge += Number((GetraenkeListe[i]).value);
+        for(let i=0; i < menge_GetraenkeListe.length; i++){
+          hilfe1 = Number(menge_GetraenkeListe[i].value);
+          temp = Number(alkohol_GetraenkeListe[i]) / 100;
+          temp2 = temp * hilfe1;
+          temp3 = temp2 * 0.8;
+          //aufgenommeneMengeArray.push(temp);
+          aufgenommeneMengeArray[i] = temp3;
+          console.log(temp3);
+          console.log(i);
+          alert("Aufgenommene Menge: " + aufgenommeneMengeArray[i]);
+          //aufgenommeneMenge += Number((GetraenkeListe[i]).value);
           }
-          alert(aufgenommeneMenge);
+          console.table(menge_GetraenkeListe);
+          //console.log("Array an der Stelle 8: " + aufgenommeneMengeArray[8]);
+          //alert("Aufgenommene Menge: " + aufgenommeneMenge);
       }
 
     </script>

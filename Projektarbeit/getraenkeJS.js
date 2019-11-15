@@ -53,7 +53,8 @@ window.addEventListener("load", () => {
     outputAlter.innerHTML = this.value;
   }
 
-
+  let alkoholMengeGesamt = 0;
+  let _promillewert = 0;
 
   berechnePromille.addEventListener("click", function() {
 
@@ -65,15 +66,28 @@ window.addEventListener("load", () => {
     if (document.getElementById('frau_id').checked) {
       console.log("geklickt");
 
-      rechneReduktionFrau = Number((1.055 * (-2.097 + 0.1069 * Number(hoehe.value) + 0.2466 * Number(gewicht.value)) / 0.8 * Number(gewicht.value)));
+      rechneReduktionFrau = Number((1.055 * (-2.097 + 0.1069 * Number(hoehe.value) + 0.2466 * Number(gewicht.value)) / (0.8 * Number(gewicht.value))));
+      console.log("RechneReduktionFrau lautet: " + rechneReduktionFrau);
 
-      if (Number(bierMenge.value) != 0 || Number(weinMenge.value) != 0 || Number(likörMenge.value) != 0 || Number(schnapsMenge.value) != 0 || Number(whiskyMenge.value) != 0 || Number(wodkaMenge.value) != 0) {
-        aufgenommeneMenge = Number(bierMenge.value) * Number(bierAlkohol.value) + Number(weinMenge.value) * Number(weinAlkohol.value) + Number(likörMenge.value) * Number(likörAlkohol.value) + Number(schnapsMenge.value) * Number(schnapsAlkohol.value) + Number(wodkaMenge.value) * Number(wodkaAlkohol.value) + Number(whiskyMenge.value) * Number(whiskyAlkohol.value);
-
+      let i;
+      for(i=0; i < aufgenommeneMengeArray.length; i++){
+        alkoholMengeGesamt = Number(alkoholMengeGesamt) + Number(aufgenommeneMengeArray[i]);
+        console.log(alkoholMengeGesamt);
       }
-      ergebnis = Number(aufgenommeneMenge) / Number(Number(gewicht.value) * rechneReduktionFrau);
+      console.log("Die alkoholMengeGesamt: " + alkoholMengeGesamt);
+
+      _promillewert = alkoholMengeGesamt / (Number(gewicht.value) * rechneReduktionFrau);
+      _promilleWertRichtig = _promillewert * 1000;
+      console.log("Der Promillewert beträgt: " + _promillewertRichtig);
+
+      //aufgenommeneMenge = Number(bierMenge.value) * Number(bierAlkohol.value)  + Number(weinMenge.value) * Number(weinAlkohol.value) + Number(likörMenge.value) * Number(likörAlkohol.value) + Number(schnapsMenge.value) * Number(schnapsAlkohol.value) + Number(wodkaMenge.value) * Number(wodkaAlkohol.value) + Number(whiskyMenge.value) * Number(whiskyAlkohol.value);
+
+    //  aufgenommeneMenge2 = Number(aufgenommene)
+    //  console.log(aufgenommeneMenge2);
+
+    /*  ergebnis = Number(aufgenommeneMenge) / Number(Number(gewicht.value) * rechneReduktionFrau);
       ergebnis2 = Number(ergebnis);
-      console.log("Dein Promillewert " + ergebnis2);
+      console.log("Dein Promillewert " + ergebnis2); */
 
 
     } else if (document.getElementById('mann_id').checked) {
