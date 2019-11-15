@@ -6,49 +6,11 @@
   <title>🥂 Online-Promillerechner</title>
   <link rel="stylesheet" href="getraenkeStyle.css" />
   <script src="getraenkeJS.js"></script>
-  <!-- <script src="page-list.js"></script>
-  <link rel="stylesheet" href="page-list.css" />
-  <script src="page-edit.js"></script>
-  <link rel="stylesheet" href="page-edit.css" />
 
-  <script>
-    window.addEventListener("load", () => {
-      let pages = [{
-          name: "page-list", // Name zum Aufrufen der Seite
-          klass: PageList, // Klasse, die die Seite bereitstellt
-          label: "Getränke-Übersicht", // Bezeichnung der Seite
-          hidden: false, // Seite kann im Menü ausgewählt werden
-        },
-        {
-          name: "page-new",
-          klass: PageEdit,
-          label: "Getränk hinzufügen",
-          hidden: false, // Seite kann im Menü ausgewählt werden
-        },
-        {
-          name: "page-edit",
-          klass: PageEdit,
-          label: "Getränk bearbeiten",
-          hidden: true, // Seite kann im Menü NICHT ausgewählt werden
-        },
-      ];
-
-      let app = new App(pages);
-      app.showPage("page-list");
-    });
-  </script> -->
 
 </head>
 <html>
-<!-- <nav id="app-menu">
-  <ul></ul>
-</nav>
 
-<template id="template-app-menu-li">
-  <li data-page-name="$NAME$">
-    <a>$LABEL$</a>
-  </li>
-</template> -->
 
 <body>
   <header>
@@ -77,18 +39,22 @@
     <p id="begrüßung"> <strong> Bitte wählen Sie im folgenden Ihr Geschlecht, Ihre Größe und Ihr Gewicht aus </strong>
       <div class="radioBt">
         <b> Sie sind: </b>
-        <input type="radio" name="geschlecht" value="Männlich"> Männlich
-        <input type="radio" name="geschlecht" value="Weiblich"> Weiblich
+        <input type="radio" name="geschlecht" value="Männlich" id="mann_id"> Männlich
+        <input type="radio" name="geschlecht" value="Weiblich" id="frau_id"> Weiblich
       </div>
       <br>
       </br>
 
+      <div class="seekbar2">
+        <b> Ihr Alter: </b>
+        <input type="range" id="alter" min="16" max="100" value="16" name="alter">
+        <span id="laufe2"> </span>
+        <label>  Jahre</label>
+      </div>
 
-
-
+<br>
+</br>
       <div class="seekbar">
-
-
 
         <b> Ihre Körpergröße (in cm): </b>
         <input type="range" id="hoehe" min="120" max="220" value="120" name="hoehe">
@@ -106,13 +72,20 @@
 
 
 
+      <div class= "ergebnisButton">
+          <button id="berechnePromille">Promillewert berechnen</button>
+          <input id ="ergebnisText" type="text" value"" readonly ="readonly" > </input>
+      </div>
+
+
       <section id="boxes">
 
         <div class="container" id="DrinkBox">
           <div class="box">
             <img src="bilder/BierBild.png">
             <h3>Bier</h3>
-            <h4>Menge: <input id="bier_menge_id" type="number" value="0" readonly= "readonly"</input> (in Liter)</h4> <h5>Alkoholgehalt: <label id="alkohol" value "5.5"> 5.5 Vol.-%</label></h5>
+            <h4>Menge: <input id="bier_menge_id" type="number" value="0" readonly="readonly" </input> (in Liter)</h4>
+            <h5>Alkoholgehalt: <label id="bier_alkohol_id" value "5.5"> 5.5 Vol.-%</label></h5>
               <p id="beschreibung">Bier ist ein Getränk, das durch Gärung aus stärkehaltigen Stoffen gewonnen und nicht destilliert wird. Bei der Herstellung des meist kohlensäurehaltigen Getränks werden oft Hopfen oder andere Würzstoffe zugesetzt,
                 etwa
                 Früchte, Kräuter wie Grut oder andere Gewürze. (Quelle: wikipedia)</p>
@@ -129,8 +102,8 @@
             <img src="bilder/WeinBild.png">
             <h3>Wein</h3>
             <p>
-              <h4>Menge: <input id="wein_menge_id" type="number" value="0" readonly= "readonly" </input> (in Liter)</h4> </p> <p>
-                <h5>Alkoholgehalt: <label id="alkohol" value "12.5"> 12.5 Vol.-%</label></h5>
+              <h4>Menge: <input id="wein_menge_id" type="number" value="0" readonly </input> (in Liter)</h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="wein_alkohol_id" value "12.5"> 12.5 Vol.-%</label></h5>
             </p>
             <p id="beschreibung">Wein ist ein alkoholisches Getränk aus dem vergorenen Saft der Beeren der Edlen Weinrebe. Wein ist ein Genussmittel. Durch spezifische önologische Ausbaumethoden kommt es bei der Lagerung zu zahlreichen biochemischen
               Reifeprozessen, die sehr vielfältig sein können und auch dazu führen, dass manche Weine jahrzehntelang reifen und haltbar sind. (Quelle: wikipedia)</p>
@@ -147,8 +120,8 @@
             <img src="bilder/LikoerBild.png">
             <h3>Likör</h3>
             <p>
-              <h4>Menge: <input id="likör_menge_id" type="number" value="0" readonly= "readonly"</input> (in Liter)</h4> </p> <p>
-                <h5>Alkoholgehalt: <label id="alkohol" value "30"> 30 Vol.-%</label></h5>
+              <h4>Menge: <input id="likör_menge_id" type="number" value="0" readonly="readonly" </input> (in Liter)</h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="likör_alkohol_id" value "30"> 30 Vol.-%</label></h5>
             </p>
             <p id="beschreibung">Liköre sind aromatische Spirituosen mit relativ hohem Zuckergehalt (mindestens 100 Gramm pro Liter). Der Alkoholgehalt liegt normalerweise bei 15 bis 35 % Vol, es gibt aber auch stärkere und schwächere Liköre, zum
               Beispiel Chartreuse verte mit 55 % Vol oder Aperol mit 11 oder 15 % Vol. (Quelle: wikipedia)</p>
@@ -161,8 +134,8 @@
             <img src="bilder/SchnapsBild.png">
             <h3>Schnaps</h3>
             <p>
-              <h4>Menge: <input id="schnaps_menge_id" type="number" value="0" readonly= "readonly" </input> (in Liter)</h4> </p> <p>
-                <h5>Alkoholgehalt: <label id="alkohol" value "4"> 40 Vol.-%</label> </h5>
+              <h4>Menge: <input id="schnaps_menge_id" type="number" value="0" readonly="readonly" </input> (in Liter)</h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="schnaps_alkohol_id" value "4"> 40 Vol.-%</label> </h5>
             </p>
             <p id="beschreibung">Eine Spirituose, umgangssprachlich auch Schnaps oder abwertend Fusel genannt, ist eine alkoholische Flüssigkeit, die zum menschlichen Genuss bestimmt ist, besondere organoleptische Eigenschaften besitzt und nach
               aktuellem EU-Recht einen Mindestalkoholgehalt von 15 % Vol. aufweist; bei Eierlikör genügen 14 % Vol. Früher war auch die Bezeichnung Branntwein üblich, die noch heute in einigen Gesetzen verwendet wird. Die Gewinnung der alkoholischen
@@ -178,8 +151,8 @@
             <img src="bilder/WodkaBild.png">
             <h3>Wodka</h3>
             <p>
-              <h4>Menge: <input id="wodka_menge_id" type="number" value="0" readonly= "readonly"</input> (in Liter)</h4> </p> <p>
-                <h5>Alkoholgehalt: <label id="alkohol" value "45"> 45 Vol.-%</label> </h5>
+              <h4>Menge: <input id="wodka_menge_id" type="number" value="0" readonly="readonly" </input> (in Liter)</h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="wodka_alkohol_id" value "45"> 45 Vol.-%</label> </h5>
             </p>
             <p id="beschreibung">Wodka ist eine meist farblose Spirituose mit einem Alkoholgehalt von idealerweise 40 Volumenprozent. Er zeichnet sich besonders durch seinen fast neutralen Geschmack und das Fehlen jeglicher Fuselöle, künstlicher
               Aromen
@@ -194,8 +167,8 @@
             <img src="bilder/WhiskyBild.png">
             <h3>Whisky</h3>
             <p>
-              <h4>Menge: <input id="whisky_menge_id" type="number" value="0" readonly= "readonly" </input> (in Liter)</h4> </p> <p>
-                <h5>Alkoholgehalt: <label id="alkohol" value "43"> 43 Vol.-%</label></h5>
+              <h4>Menge: <input id="whisky_menge_id" type="number" value="0" readonly="readonly" </input> (in Liter)</h4> </p> <p>
+                <h5>Alkoholgehalt: <label id="whisky_alkohol_id" value "43"> 43 Vol.-%</label></h5>
             </p>
             <p id="beschreibung">Whisky ist eine durch Destillation aus Getreidemaische gewonnene und im Holzfass gereifte Spirituose. (Quelle: wikipedia)</p>
 
@@ -249,7 +222,6 @@
     <button id="testFall" onclick="ausgeben()"> Test</button>
     <script>
 
-      var GetraenkeListe = ['bier_menge_id', 'wein_menge_id', 'likör_menge_id', 'schnaps_menge_id', 'wodka_menge_id', 'whisky_menge_id'];
 
       function addDrink() {
 
@@ -264,24 +236,22 @@
         let newElement3 = document.createElement('h3');
         let newElement4 = document.createElement('p');
         let newElement5 = document.createElement('h4');
-        let node = document.createElement("input");
+        let newElement10 = document.createElement('h4');
+        let newElement9 = document.createElement('input');
         let newElement6 = document.createElement('p');
         let newElement7 = document.createElement('h5');
         let newElement8 = document.createElement('p');
 
-
         //die src von img setze
         newElement2.setAttribute('src', 'alkoholHinzufuegen.jpg');
-
-
-        //id="whisky_menge_id" type="number" value="0" readonly= "readonly"
 
         //die einzelnen Elemente aneinander anhängen und verschachteln
         newElement1.appendChild(newElement2);
         newElement1.appendChild(newElement3);
         newElement1.appendChild(newElement4);
         newElement4.appendChild(newElement5);
-        newElement5.appendChild(node);
+        newElement5.appendChild(newElement10);
+        newElement5.appendChild(newElement9);
         newElement1.appendChild(newElement6);
         newElement6.appendChild(newElement7);
         newElement1.appendChild(newElement8);
@@ -289,24 +259,26 @@
         //den Elementen die benötigten id, bzw. class zuweisen
         newElement1.className = "box";
         newElement8.idName = "beschreibung";
-        newElement2.idName = "universalBild";
+        newElement2.setAttribute('id', 'universalBild');
+        newElement9.setAttribute('id', 'NeuesGetraenk_'+_name);
+        newElement9.setAttribute('type', 'number');
+        newElement9.setAttribute('value', ""+_menge);
+        newElement9.setAttribute('readonly', 'readonly');
+
 
         //bestimmte Elemente mit Text füllen
         newElement3.textContent = _name;
-        newElement5.textContent = 'Menge: ';
+        newElement10.textContent = 'Menge: '
+        //newElement5.innerHTML = 'Menge: ';
         newElement7.textContent = 'Alkoholgehalt: ' + _alkgehalt;
         newElement8.textContent = _beschreibung;
-        node.setAttribute("id", "NeuesGetraenk"+_name);
-        node.setAttribute('type', 'number');
-        node.setAttribute('value', _menge);
-        node.setAttribute('readonly', 'readonly');
+
 
         //Elemente finden, wo die ganzen Sachen angehängt werden und als Kind anhängen
         let DrinkBox = document.getElementById('DrinkBox');
         DrinkBox.appendChild(newElement1)
 
-
-
+        help = 'NeuesGetraenk_'+_name;
         GetraenkeListe.push(document.getElementById(help));
 
       }
@@ -318,14 +290,24 @@
         id.value = _ergebnis;
       }
 
-
+      var GetraenkeListe = [document.getElementById('bier_menge_id'), document.getElementById('wein_menge_id'), document.getElementById('likör_menge_id'), document.getElementById('schnaps_menge_id'), document.getElementById('wodka_menge_id'), document.getElementById('whisky_menge_id')];
 
       function ausgeben(){
 
         let i;
         for(i=0; i < GetraenkeListe.length; i++){
-          alert(document.getElementById(GetraenkeListe[i]).value);
+          alert((GetraenkeListe[i]).value);
         }
+      }
+
+      function berechneAufgenommeneMenge(){
+        let i;
+        aufgenommeneMenge = Number(0);
+
+        for(i=0; i < GetraenkeListe.length; i++){
+          aufgenommeneMenge += Number((GetraenkeListe[i]).value);
+          }
+          alert(aufgenommeneMenge);
       }
 
     </script>

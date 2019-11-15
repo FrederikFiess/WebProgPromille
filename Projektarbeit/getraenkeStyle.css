@@ -76,33 +76,26 @@ header a:hover {
 }
 
 nav {
-
-
-    border: 0px solid #202020;
-    border-bottom-width: 3px;
+  border: 0px solid #202020;
+  border-bottom-width: 3px;
 }
-
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: -3px;
-
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -3px;
+  display: flex;
 }
-ul{
+
+ul {
   text-align: left;
-
 }
+
 nav li:hover {
-
-    border: 0px solid rgb(103, 197, 231);
-    border-bottom-width: 3px;
-
+  border: 0px solid rgb(103, 197, 231);
+  border-bottom-width: 3px;
 }
-
-
 
 #boxes {
   margin-top: 40px;
@@ -143,6 +136,59 @@ main {
   text-align: right;
 }
 
+#ergebnisText {
+  border: none;
+}
+
+#wein_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+}
+
+#bier_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+}
+
+#likör_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+}
+
+#schnaps_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+}
+
+#whisky_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+  }
+
+#wodka_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+}
+
+#universalBild{
+  width: 356px;
+  height: 266px;
+}
+
+.ergebnisButton {}
+
 main .radioBt {
   float: left;
 }
@@ -152,6 +198,10 @@ main .seekbar {
 }
 
 main .seekbar1 {
+  float: left;
+}
+
+main .seekbar2 {
   float: left;
 }
 
