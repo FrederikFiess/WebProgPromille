@@ -375,3 +375,37 @@ footer button:hover {
   text-align: center;
   align-items: center;
 }
+
+.buttonMenge {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5px;
+  align-items: center;
+
+  text-align: center;
+  color: black;
+  font-family: helvetica;
+
+
+
+  text-decoration: none;
+  align-items: center;
+
+  border: 2px solid black;
+  border-radius: 20px;
+
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+
+  background-color: white;
+  padding: 4px 30px;
+}
+
+.buttonMenge:hover {
+  background-color:black;
+  color: white;
+  transition-duration: .2s;
+  -webkit-transition-duration: .11s;
+  -moz-transition-duration: .2s;
+}
