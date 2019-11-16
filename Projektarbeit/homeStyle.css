@@ -23,6 +23,7 @@ a:active {
   margin-right: auto;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   letter-spacing: 4px;
+  text-align: center;
 }
 
 #logo {
@@ -34,7 +35,7 @@ a:active {
 }
 
 #text {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
   font-size: 300%;
   letter-spacing: 2px;
@@ -69,6 +70,9 @@ a:active {
 .home {
   position: flex;
   overflow: hidden;
+  margin-left: auto;
+  text-align: center;
+
 }
 
 .home img {
@@ -80,7 +84,7 @@ a:active {
 
 .home span {
   position: absolute;
-  text-align: center;
+  text-align: left;
   bottom: -35px;
 }
 
