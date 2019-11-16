@@ -72,11 +72,7 @@
 
 
 
-      <div class= "ergebnisButton">
-          <button id="berechnePromille">Promillewert berechnen</button>
-          <input id ="ergebnisText" type="text" value"" readonly ="readonly" > </input>
-      </div>
-
+      <div class="results"></div>
 
       <section id="boxes">
 
@@ -205,6 +201,7 @@
 
   <footer>
 
+    <div class="results2"></div>
 
 
     <div class="missingGetraenk" id="missingGetraenk">
@@ -219,7 +216,7 @@
 
 
     <button id="weiteresGetraenk" onclick="addDrink()"> Weiteres Getränk einfügen</button>
-    <button id="testFall" onclick="berechneAufgenommeneMenge()"> Test</button>
+    <button id="berechnePromille" onclick="berechneAufgenommeneMenge()"> Promillewert berechnen</button>
     <script>
 
 
@@ -319,7 +316,7 @@
           aufgenommeneMengeArray[i] = temp3;
           console.log(temp3);
           console.log(i);
-          alert("Aufgenommene Menge: " + aufgenommeneMengeArray[i]);
+          //alert("Aufgenommene Menge: " + aufgenommeneMengeArray[i]);
           //aufgenommeneMenge += Number((GetraenkeListe[i]).value);
           }
           console.table(menge_GetraenkeListe);

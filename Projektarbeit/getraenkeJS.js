@@ -53,11 +53,10 @@ window.addEventListener("load", () => {
     outputAlter.innerHTML = this.value;
   }
 
-  let alkoholMengeGesamt = 0;
-  let _promillewert = 0;
 
   berechnePromille.addEventListener("click", function() {
-
+    let alkoholMengeGesamt = 0;
+    let _promillewert = 0;
     let rechneReduktionFrau;
     let rechneReduktionMann;
     let aufgenommeneMenge;
@@ -77,7 +76,17 @@ window.addEventListener("load", () => {
       console.log("Die alkoholMengeGesamt: " + alkoholMengeGesamt);
 
       _promillewert = alkoholMengeGesamt / (Number(gewicht.value) * rechneReduktionFrau) * 1000;
-      console.log("Der Promillewert beträgt: " + _promillewert);
+      let gerundet = Math.round(_promillewert * 100) / 100;
+      console.log("Der Promillewert beträgt: " + gerundet);
+
+      document.querySelector('.results').innerHTML = "Ihr Promillewert beträgt : " + gerundet + " ‰";
+
+
+      window.onload = function(){
+      var übertrag =gerundet;
+
+      document.getElementById('output').innerHTML = übertrag;
+  };
 
       //aufgenommeneMenge = Number(bierMenge.value) * Number(bierAlkohol.value)  + Number(weinMenge.value) * Number(weinAlkohol.value) + Number(likörMenge.value) * Number(likörAlkohol.value) + Number(schnapsMenge.value) * Number(schnapsAlkohol.value) + Number(wodkaMenge.value) * Number(wodkaAlkohol.value) + Number(whiskyMenge.value) * Number(whiskyAlkohol.value);
 
@@ -90,16 +99,21 @@ window.addEventListener("load", () => {
 
 
     } else if (document.getElementById('mann_id').checked) {
-      rechneReduktionMann = (1.055 * (2.447 - 0.09516 * outputAlter + 0.1074 * outputHöhe + 0.3362 * outputGewicht) / 0.8 * outputGewicht);
-      aufgenommeneMenge = bierMenge.value + weinMenge.value + likörMenge.value + schnapsMenge.value + whiskyMenge.value + wodkaMenge.value
+      rechneReduktionMann = (1.055 * (2.447 - 0.09516 * Number(alter.value) + 0.1074 * Number(hoehe.value) + 0.3362 * Number(gewicht.value)) / (0.8 * Number(gewicht.value)));
+      console.log("RechneReduktionMann lautet: " + rechneReduktionMann);
 
-      if (bierMenge.value != 0 || weinMenge.value != 0 || likörMenge.value != 0 || schnapsMenge.value != 0 || whiskyMenge.value != 0 || wodkaMenge.value != 0) {
-        aufgenommeneMenge = bierMenge.value * bierAlkohol.value + weinMenge.value * weinAlkohol + likörMenge.value * likörAlkohol.value + schnapsMenge.value * schnapsAlkohol + wodkaMenge.value * wodkaAlkohol.value + whiskyMenge.value * whiskyAlkohol.value;
-
+      let i;
+      for(i=0; i < aufgenommeneMengeArray.length; i++){
+        alkoholMengeGesamt = Number(alkoholMengeGesamt) + Number(aufgenommeneMengeArray[i]);
+        console.log(alkoholMengeGesamt);
 
       }
-      ergebnis = aufgenommeneMenge / (outputGewicht * rechneReduktionMann);
-      console.log("Dein Promillewert " + ergebnis);
+
+      console.log("Die alkoholMengeGesamt: " + alkoholMengeGesamt);
+      _promillewert = alkoholMengeGesamt / (Number(gewicht.value) * rechneReduktionMann) * 1000;
+      let gerundet = Math.round(_promillewert * 100) / 100;
+      console.log("Dein Promillewert " + gerundet);
+      document.querySelector('.results').innerHTML = "Ihr Promillewert beträgt : " + gerundet +" ‰";
 
 
     } else {
