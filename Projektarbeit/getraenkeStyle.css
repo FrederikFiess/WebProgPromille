@@ -139,6 +139,7 @@ main {
 
 #ergebnisText {
   border: none;
+  color: black;
 }
 
 #wein_menge_id {
@@ -454,4 +455,12 @@ footer button:hover {
   transition-duration: .2s;
   -webkit-transition-duration: .11s;
   -moz-transition-duration: .2s;
+}
+
+.results {
+  margin-top: 1em;
+  text-align: center;
+  background-color: #DCDCDC;
+  font-size: 70px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
