@@ -141,18 +141,24 @@ main {
   color: black;
 }
 
-#wein_menge_id {
-  border: none;
-  background-color: #f6f6f6;
-  text-align: center;
-  font-style: italic;
-}
-
 #bier_menge_id {
   border: none;
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
+}
+
+#wein_menge_id {
+  border: none;
+  background-color: #f6f6f6;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
 }
 
 #likör_menge_id {
@@ -160,6 +166,9 @@ main {
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
 }
 
 #schnaps_menge_id {
@@ -167,6 +176,9 @@ main {
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
 }
 
 #whisky_menge_id {
@@ -174,6 +186,9 @@ main {
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
   }
 
 #wodka_menge_id {
@@ -181,6 +196,9 @@ main {
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
+  font-size: 18px;
+  color: #32CD32;
+  font-weight: bold;
 }
 
 #universalBild{
@@ -216,7 +234,7 @@ main .box {
   float: right;
   box-sizing: border-box;
   max-height: calc(50% - 0.2em);
-  min-height: 1050px;
+  min-height: 1100px;
   /* padding und border nicht zur Größe hinzuaddieren */
   flex-grow: 1;
   flex-shrink: 0;
@@ -333,7 +351,7 @@ footer button:hover {
 .missingGetraenk {
   display: block;
   width: 10%;
-  padding-right: 5em;
+  padding-right: 1em;
 }
 
 .missingGetraenk {
@@ -344,22 +362,10 @@ footer button:hover {
 }
 
 .buttonserie {
+  flex-basis: auto;
   display: block;
-  width: 10%;
-  padding: 0.5em;
-  margin-bottom: 0.5em;
-  background-color: #FFFFFF;
-  font-weight: bold;
-  2 border: 0;
-  border-radius: 0.25em;
-  border-style: dotted;
-}
-
-.buttonserie {
-  display: block;
-  width: 100%;
+  width: inherit;
   height: 85px;
-  padding: 0.5em;
   margin-bottom: 0.5em;
   background-color: #FFFFFF;
   font-weight: bold;
@@ -368,7 +374,7 @@ footer button:hover {
   border-style: dotted;
   font-size: 13pt;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
+
 }
 
 ::-webkit-input-placeholder {
@@ -382,23 +388,16 @@ footer button:hover {
   height: 40px;
   margin-bottom: 5px;
   align-items: center;
-
   text-align: center;
   color: black;
   font-family: helvetica;
-
-
-
   text-decoration: none;
   align-items: center;
-
   border: 2px solid black;
   border-radius: 20px;
-
   transition-duration: .2s;
   -webkit-transition-duration: .2s;
   -moz-transition-duration: .2s;
-
   background-color: white;
   padding: 4px 30px;
 }
