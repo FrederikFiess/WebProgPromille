@@ -2,6 +2,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+
 }
 
 ul {
@@ -173,7 +174,7 @@ main {
   background-color: #f6f6f6;
   text-align: center;
   font-style: italic;
-  }
+}
 
 #wodka_menge_id {
   border: none;
@@ -182,12 +183,10 @@ main {
   font-style: italic;
 }
 
-#universalBild{
+#universalBild {
   width: 356px;
   height: 266px;
 }
-
-.ergebnisButton {}
 
 main .radioBt {
   float: left;
@@ -203,6 +202,60 @@ main .seekbar1 {
 
 main .seekbar2 {
   float: left;
+}
+
+#hoehe {
+  -webkit-appearance: none;
+  height: 5px;
+  background: lightgrey;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#hoehe::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: rgb(181, 201, 188);
+}
+
+#gewicht {
+  -webkit-appearance: none;
+  height: 5px;
+  background: lightgrey;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#gewicht::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: rgb(181, 201, 188);
+}
+
+#alter {
+  -webkit-appearance: none;
+  height: 5px;
+  background: lightgrey;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#alter::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: rgb(181, 201, 188);
 }
 
 #begrüßung {
@@ -381,29 +434,22 @@ footer button:hover {
   height: 40px;
   margin-bottom: 5px;
   align-items: center;
-
   text-align: center;
   color: black;
   font-family: helvetica;
-
-
-
   text-decoration: none;
   align-items: center;
-
   border: 2px solid black;
   border-radius: 20px;
-
   transition-duration: .2s;
   -webkit-transition-duration: .2s;
   -moz-transition-duration: .2s;
-
   background-color: white;
   padding: 4px 30px;
 }
 
 .buttonMenge:hover {
-  background-color:black;
+  background-color: black;
   color: white;
   transition-duration: .2s;
   -webkit-transition-duration: .11s;
