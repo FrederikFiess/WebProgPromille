@@ -7,7 +7,7 @@ Wir erstellen eine Website, welche grundsätzlich die Funktionalität aufweist, 
 Es gibt eine Startseite, auf der Nutzer beim Aufruf der Website gelangt. Auf dieser wird die Intention hinter der Website erklärt und man kann direkt den Promillrechner starten.
 
 Wird der Promillerechner gestartet, so erfolgt der Aufruf der Eingabemaske.
-Der User gibt sein Geschlecht, Alter, Gewicht und seine Körpergröße an.
+Der User gibt sein Geschlecht, Alter, Gewicht und seine Körpergröße an. Wird das Geschlecht nicht ausgewählt, so wird ein Alert geworfen.
 
  Hier werden die vorkonfigurierten verfügbaren Getränke angezeigt, die der User mit Hilfe von Buttons zu seinem "Warenkorb" hinzufügen kann. Jedes Getränk wird dabei dynamisch mit der Menge aufsummiert. In der Box, in der das jeweilige Getränk dargestellt ist, ist die aufsummierte Menge sichtbar.
 
