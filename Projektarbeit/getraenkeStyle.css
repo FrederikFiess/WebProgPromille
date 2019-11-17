@@ -442,7 +442,7 @@ footer button:hover {
   border: 0;
   border-radius: 0.25em;
   border-style: dotted;
-  font-size: 13pt;
+  font-size: 12pt;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-overflow: ellipsis;
 }
