@@ -486,7 +486,8 @@ footer button:hover {
 .results {
   margin-top: 1em;
   text-align: center;
-  background-color: #DCDCDC;
+  background-color: #f6f6f6;
   font-size: 70px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+border-style: ridge;
 }
