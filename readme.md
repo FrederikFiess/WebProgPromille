@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 **Online Promillerechner**
-=======
 
 Gruppenprojekt von Michael Weber, Francesco Di Seri und Frederik Fieß
 
