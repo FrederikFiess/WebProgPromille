@@ -13,7 +13,7 @@
 <section id="homeSeite">
   <div class="home">
 
-    <span id="test123"/>
+    <span id="homeSpan"/>
       <div id="inhalt">
         <h2></h2>
       </div>
@@ -220,7 +220,7 @@
         <p> <strong> Sie haben das gewünschte Getränk nicht gefunden? Nachfolgend können Sie ein neues Getränk anlegen: </strong> </p>
       </div>
       <input class="buttonserie" id="nameEingeben" placeholder="Name eingeben" </input> <input class="buttonserie" id="mengeEingeben" type="number" value="" onkeyup="nurZahlen(this)" placeholder="Menge eingeben (in Liter)" </input> <input class="buttonserie" id="alkoholGehaltEingeben"
-        placeholder="Alkoholgehalt eingeben" type="number" value="" onkeyup="nurZahlen(this)" </input> <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben" </input> <!-- <input id="nameEingeben" placeholder="Name eingeben" </input> <input id="mengeEingeben"
+        placeholder="Alk.-Gehalt eingeben (in Vol.-%)" type="number" value="" onkeyup="nurZahlen(this)" </input> <input class="buttonserie" id="beschreibungEingeben" placeholder="Beschreibung eingeben" </input> <!-- <input id="nameEingeben" placeholder="Name eingeben" </input> <input id="mengeEingeben"
         placeholder="Menge eingeben" </input> <input id="alkoholGehaltEingeben" placeholder="Alkoholgehalt eingeben" </input> <input id="beschreibungEingeben" placeholder="Beschreibung des Getränks eingeben" </input> -->
 
       <button id="weiteresGetraenk" onclick="addDrink()">Getränk einfügen</button>
@@ -232,11 +232,11 @@
     <script>
 
 
-    function nurZahlen(el) {
-      var val  = el.value.replace(/[^\.^,\d]/g, '') ; //Nur Zahlen und Dez-Zeichen
-      val       = val.replace(/[,]/g, '.') ; // "," ersetzen zu "."
-      // Nur ein Dez-Zeichen erlauben
-}
+      function nurZahlen(el) {
+        var val  = el.value.replace(/[^\.^,\d]/g, '') ; //Nur Zahlen und Dez-Zeichen
+        val       = val.replace(/[,]/g, '.') ; // "," ersetzen zu "."
+        // Nur ein Dez-Zeichen erlauben
+      }
 
       function addDrink() {
 
@@ -345,13 +345,6 @@
         //alert("Aufgenommene Menge: " + aufgenommeneMenge);
       }
     </script>
-
-
-
   </div>
-
-
-
 </body>
-
 </html>

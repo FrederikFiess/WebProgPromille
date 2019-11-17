@@ -444,10 +444,7 @@ footer button:hover {
   border-style: dotted;
   font-size: 13pt;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-#nameEingeben {
-  text-align: left;
+  text-overflow: ellipsis;
 }
 
 ::-webkit-input-placeholder {
