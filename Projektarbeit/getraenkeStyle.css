@@ -121,6 +121,7 @@ nav li:hover {
   padding-top: 20px;
   font-size: 40pt;
   color: white;
+  word-wrap: break-word;
 }
 
 #auswahl {
