@@ -30,7 +30,7 @@ a:active {
   letter-spacing: 4px;
   flex: auto;
   word-wrap: break-word;
-  padding-top: 1.5em;
+  padding-top: 1.2em;
 }
 
 #text {
@@ -63,28 +63,23 @@ a:active {
 }
 
 #buttonStart {
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
-#homeSeite{
-
-    float: center;
-    text-align: center;
-
+#homeSeite {
+  float: center;
+  text-align: center;
 }
 
-
-html{
+html {
   padding: 0;
   margin: 0;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-
 }
 
 .home {
   overflow: hidden;
   text-align: left;
-
 }
 
 .home img {
@@ -92,15 +87,13 @@ html{
   object-fit: scale-down;
   height: 100%;
   width: 100%;
-
 }
 
 .home span {
   text-align: center;
   bottom: 100px;
   background-size: 100% 100%;
-  min-height: 100vh;
-  margin-bottom: 20px;
+  min-height: 105vh;
 }
 
 button:hover {
@@ -127,16 +120,15 @@ button:hover {
   -webkit-transition-duration: .2s;
   -moz-transition-duration: .2s;
   background-color: white;
-  padding:4px 30px;
+  padding: 4px 30px;
 }
 
-#test123{
-
+#test123 {
   background: url('bilder/alkohol.jpg') no-repeat 0px 2px;
   background-size: 100% 100%;
-  background-repeat:none;
-  display:block;
-  object-fit:scale-down;
+  background-repeat: none;
+  display: block;
+  object-fit: scale-down;
   margin-top: -30px;
   flex: auto;
 }
